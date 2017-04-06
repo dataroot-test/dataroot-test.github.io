@@ -1,0 +1,13 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "buttons.scss";
+@import "partials/header.scss";
+
+@import "screen.scss";
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: $font-size-base;
+	color: $font-color;
+}
+
+
