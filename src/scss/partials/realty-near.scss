@@ -9,10 +9,10 @@ a {
 
 	.wrapper {
 		background: $color-secondary;
-		margin: auto;
+		margin: 20px auto;
 		@include flexbox();
 		flex-flow: row wrap;
-		margin-top: 2.5%;
+    	padding-bottom: 3px;
 
 		.realty-near__text {
 			width: 41%;
@@ -21,7 +21,7 @@ a {
 
 			.realty-near__nav {
 				padding-left: 11.1%;
-				padding-top: 1%;
+				padding-top: 1.5%;
 				list-style-type: none;
 				margin: 0;
 				@include flexbox();
@@ -66,13 +66,13 @@ a {
 
 a.realty-near__link {	
 	@include flexbox();
-	margin-left: 10%;
+	margin-left: 10.5%;
 	margin-bottom: 10%;
 	justify-content: center;
 	font-size: 14px;
 	word-spacing: 0.05px;
 	letter-spacing: -0.05px;	
-	width: 318px;
+	width: 316px;
 	border-radius: 2px;
 	border: 2px solid transparent;
 
@@ -103,3 +103,7 @@ a.realty-near__link {
 	    margin-right: 10px;
 	}
 }*/
+
+.select-metro .jq-selectbox {
+	min-width: 315px;
+}
