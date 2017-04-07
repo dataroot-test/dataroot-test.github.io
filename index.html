@@ -4,11 +4,62 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Metrovka</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="src/css/jquery.formstyler.css" rel="stylesheet" />
 	<link rel="stylesheet" href="dist/css/style.main.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="dist/script/jquery.formstyler.js"></script>
 </head>
 <body>
+	<header class="header">
+		<div class="container clearfix">
+			<div class="header__top">
+				<a href="#" class="header__logo"></a>
+				<nav class="header__nav">
+					<a class="header__nav-item" href="#">Аренда</a>
+					<a class="header__nav-item" href="#">Продажа</a>
+					<a class="header__nav-item" href="#">Посуточно</a>
+					<a class="header__nav-item" href="#"><span></span>Еще</a>
+				</nav>
+				<div class="header__right">
+					<a class="header__button-new__ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a>
+					<a class="header__button-login"  href="#">Войти</a>
+				</div>
+			</div>
+			<h1 class="header__title">Поиск недвижимости в Украине</h1>
+			<div class="header__bottom">
+				<form class="header__search-form">
+				        <div class="search__form-select">
+				            <p>Выберите город:</p>
+				  			<select name="city">
+								<option>Киев</option>
+								<option>Львов</option>
+								<option>Одеса</option>
+								<option>Харьков</option>
+							</select>
+				       	</div>
+				        <div class="search__form-select__room">
+				            <p>Кол-во комнат:</p>
+				            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="1" id="check-1" class="">
+				            <label for="check-1" class="select-room__label">1</label>
+				            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="2" id="check-2" class="">
+				            <label for="check-2" class="select-room__label">2</label>
+				            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="3" id="check-3" class="">
+				            <label for="check-3" class="select-room__label">3</label>
+				            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="1" id="check-4" class="">
+				            <label for="check-4" class="select-room__label">4</label>
+				            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="1" id="check-5+" class="">
+				            <label for="check-5+" class="select-room__label">5+</label>
+				        </div>
+				        <div>
+				            <button class="button-secondary" type="submit">Перейти к поиску</button>
+				        </div>
+		        </form>
+			</div>
+		</div>
+	</header>
 	<section class="realty-near">
 		<div class="container wrapper">
 			<div class="realty-near__text">
@@ -66,5 +117,7 @@
 			</div>
 		</div>
 	</section>
+
+	<script src="dist/script/main.js"></script>
 </body>
 </html>
