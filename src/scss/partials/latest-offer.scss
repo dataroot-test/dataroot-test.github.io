@@ -1,0 +1,28 @@
+.latest__offer-check a {
+	color: $font-color;
+	border-bottom: 2px solid transparent;
+	padding: 8px 0;
+    margin-right: 37px;
+    &:hover {
+    	border-bottom: 2px solid $color-primary;
+    }
+}
+
+.latest__offer-check a:last-child {
+	margin-right: 0;
+}
+
+.latest__offer-check {
+	margin-bottom: 36px;
+    text-align: center;
+}
+
+.latest__offer-more {
+	margin-top: 35px;
+    letter-spacing: -0.25px;
+    padding-bottom: 8px;
+}
+
+.latest__offer-description__check {
+    margin-left: 16px;
+}

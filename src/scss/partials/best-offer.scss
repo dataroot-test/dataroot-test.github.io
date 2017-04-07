@@ -1,29 +1,35 @@
-.best__offer {
+.best__offer,
+.latest__offer {
 	margin-top: 20px;
 }
-.best__offer .container {
+.best__offer .container,
+.latest__offer .container {
 	background: $color-secondary;
 	text-align: center;
 	padding: 1px 6px 0 0px;
 }
 
-.best__offer h2 {
+.best__offer h2,
+.latest__offer  h2 {
 	text-align: center;
     font-size: 24px;
     font-weight: 400;
     letter-spacing: -0.5px;
     margin-bottom: 29px;
 }
-.best__offer-item  {
+.best__offer-item,
+.latest__offer-item  {
 	width: 23.5%;
 	display: inline-block;
 	position: relative;
 }
-.best__offer-item img {
+.best__offer-item img,
+.latest__offer-item  img {
 	position: relative;
 }
 
-.best__offer-item:before {
+.best__offer-item:before,
+.latest__offer-item:before {
 	width: 22px;
     z-index: 100;
     position: absolute;
@@ -37,7 +43,8 @@
     transform: rotate(90deg);
 }
 
-.best__offer-description h3 {
+.best__offer-description h3,
+.latest__offer-description  h3 {
 	font-weight: 400;
     display: -ms-flexbox;
     display: flex;
@@ -48,7 +55,8 @@
     letter-spacing: -0.5px;
 }
 
-.best__offer-description__check {
+.best__offer-description__check,
+.latest__offer-description__check   {
 	display: inline-block;
 	background-image: url(../img/sprite.png);
   	background-position: -32px -62px;
@@ -57,7 +65,8 @@
   	margin-left: 31px;
 }
 
-.best__offer-group {
+.best__offer-group,
+.latest__offer-group {
 	color: #8c9ba5;
     font-size: 12px;
     & span {
@@ -65,12 +74,14 @@
     }
 }
 
-.best__offer-description {
+.best__offer-description,
+.latest__offer-description{
 	text-align: left;
 	padding-left: 2px;
 }
 
-.best__offer-description h4 {
+.best__offer-description h4,
+.latest__offer-description h4 {
 	font-size: 12px;
     line-height: .16;
     margin-top: 20px;
@@ -91,7 +102,13 @@
 	margin-right: 12px;
 }
 
-.best__offer-more {
+.metro-station-blue {
+	background: #2573d8;
+	margin-right: 12px;
+}
+
+.best__offer-more,
+.latest__offer-more  {
 	font-size: 16px;
 	line-height: 24px;
 	width: 100%;
@@ -102,6 +119,7 @@
 	color: $font-color;
 	padding: 6px 0;
     margin-top: 28px;
+    letter-spacing: -0.45px;
 	&:hover {
 		border-color: $color-primary;
     	color: $color-primary;
