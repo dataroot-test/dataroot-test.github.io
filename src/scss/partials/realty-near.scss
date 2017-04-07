@@ -10,19 +10,21 @@ a {
 	.wrapper {
 		background: $color-secondary;
 		margin: auto;
-		display: flex;
+		@include flexbox();
 		flex-flow: row wrap;
 		margin-top: 2.5%;
 
 		.realty-near__text {
-			max-width: 320px;
-			margin: 0 auto;
+			width: 41%;
+			margin: 0;
+			flex-flow: column wrap;
 
 			.realty-near__nav {
-				padding: 5.5% 2% 8.5%;
+				padding-left: 11.1%;
+				padding-top: 1%;
 				list-style-type: none;
 				margin: 0;
-				display: flex;
+				@include flexbox();
 			}
 
 			.realty-near__nav li {
@@ -32,38 +34,72 @@ a {
 	}
 }
 
+.realty-near__title {
+	font-weight: 500;
+	font-size: 24px;
+	padding-top: 6%;
+	margin-left: 10%;
+	word-spacing: -2px;
+}
+
 .realty-near-link {
 	color: $font-color;
+	border-bottom: 2px solid transparent;
+	display: inline-flex;
+	padding-bottom: 8px;
+	padding-right: 2px;
 
-	&:hover {
-		padding-bottom: 8px;
+    &:hover,
+    &:active,
+    &:focus {
+    	padding-bottom: 8px;
 		border-bottom: 2px solid $color-primary;
 	}
 }
 
 .select {
-	margin-top: 3%;
-	margin-bottom: 10% ;
+	margin-top: 5.5%;
+	margin-bottom: 8.3%;
+	margin-left: 10%;
+	width: 190px;
 }
 
 a.realty-near__link {	
-	display: flex;
+	@include flexbox();
+	margin-left: 10%;
+	margin-bottom: 10%;
 	justify-content: center;
+	font-size: 14px;
+	word-spacing: 0.05px;
+	letter-spacing: -0.05px;	
+	width: 318px;
 	border-radius: 2px;
+	border: 2px solid transparent;
+
+	&:hover {
+		background: $color-secondary;
+		border: 2px solid $color-primary;
+		color: $color-primary;	
+	}
 }
 
 .realty-near__img {
-	width: 411px;
-	height: 212px;
-	margin: 0 auto;
+	margin: auto;
+	margin-top: 4.5%;
+	margin-left: 8.7%;
 }
 
-span.item:before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left:1vw;
-    width: 1vw;
-    content: "";
-    background: url(../img/red-circle.svg) center no-repeat;
-}
+/*.select-metro {
+	border-radius: 2px;
+	.metro-station {
+	    display: inline-block;
+	    width: 8px;
+	    height: 8px;
+	    border-radius: 50%;
+	}
+
+	.metro-station-red {
+		background: #E71D32 ;
+	    margin-right: 10px;
+	}
+}*/
