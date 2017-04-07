@@ -1,5 +1,5 @@
 var gulp = require('gulp'), 
-    rename =      require('gulp-rename'),
+    rename = require('gulp-rename'),
     uglify = require('gulp-uglify'), 
     concat = require('gulp-concat'), 
     imagemin = require('gulp-imagemin'), 
@@ -38,4 +38,5 @@ gulp.task('images', function() {
 gulp.task('watch', function(){
   gulp.watch('src/scss/*.scss', ['sass']);
 })
-gulp.task('default', ['sass', 'sprite','images', 'watch']);
+
+gulp.task('default', ['sass', 'sprite','images', /*'watch'*/]);
