@@ -1,8 +1,6 @@
-.communicate {
+/*.communicate {
 	margin: 0 auto;
-	max-width: 888.95px;
-	max-height: 806px;
-}
+}*/
 
 .communicate__content {
 	margin: auto;
@@ -72,6 +70,7 @@
 
 	.communicate__slider-ovals {
 		@include flexbox();
+		margin: 38px 0px 38px 6px;
 	}
 }
 
@@ -167,8 +166,6 @@ a.communicate__link {
 	.communicate__slider-point {
 		@include flexbox();
 		border-radius: 50%;
-		margin-top: 4.4%;
-		margin-bottom: 7%;
 		width: 12px;
 		height: 12px;
 		background-color: $color-primary;	
