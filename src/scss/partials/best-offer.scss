@@ -1,16 +1,19 @@
 .best__offer,
-.latest__offer {
+.latest__offer,
+.blog {
 	margin-top: 20px;
 }
 .best__offer .container,
-.latest__offer .container {
+.latest__offer .container,
+.blog .container {
 	background: $color-secondary;
 	text-align: center;
 	padding: 1px 6px 0 0px;
 }
 
 .best__offer h2,
-.latest__offer  h2 {
+.latest__offer  h2,
+.blog h2 {
 	text-align: center;
     font-size: 24px;
     font-weight: 400;
@@ -108,7 +111,8 @@
 }
 
 .best__offer-more,
-.latest__offer-more  {
+.latest__offer-more,
+.blog-more {
 	font-size: 16px;
 	line-height: 24px;
 	width: 100%;
@@ -120,6 +124,7 @@
 	padding: 6px 0;
     margin-top: 28px;
     letter-spacing: -0.45px;
+    text-align: center;
 	&:hover {
 		border-color: $color-primary;
     	color: $color-primary;

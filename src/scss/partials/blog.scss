@@ -1,0 +1,87 @@
+.blog .container {
+	background: $color-secondary;
+}
+
+.blog__item {
+	width: 31.5%;
+	display: inline-block;
+	position: relative;
+	text-align: left;
+}
+
+.blog-item:first-child {
+	margin-left: 7px;
+}
+
+.blog h2 {
+	margin-bottom: 25px;
+	letter-spacing: -0.8px;
+}
+
+.blog__subtitle {
+	max-width: 446px;
+    margin: 0 auto;
+    margin-top: 0px;
+    letter-spacing: -0.2px;
+    line-height: 20px;
+    margin: 0 auto 22px;
+}
+
+.blog a {
+	display: block;
+	text-align: left;
+}
+
+.blog__item-category {
+	font-size: 11px;
+    text-decoration: none;
+    font-weight: normal;
+    margin: 17px 3px 0;
+}
+
+.blog__item-title {
+	font-size: 16px;
+	font-weight: 400;
+	color: $font-color;
+	margin: 7px 0 10px;
+    line-height: 23px;
+    letter-spacing: -0.25px;
+	&:hover {
+		color: $color-primary;
+ 	}
+}
+
+.blog a.blog-more {
+	text-align: center;
+}
+
+.category-lifehack {
+	color: #ba8ff7;
+}
+
+.category-advice {
+	color: #30ae63;
+}
+
+.category-technologies {
+	color: #2573d8;
+}
+
+.blog__item-author span {
+	margin-left: 3px;
+}
+
+.blog__item-author,
+.blog__item-time {
+	color: #8c9ba5;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.blog__item-time {
+	letter-spacing: -0.25px;
+}
+
+.blog-more {
+	margin-top: 30px;
+}
