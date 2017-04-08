@@ -6,7 +6,6 @@
 
 .communicate__content {
 	margin: auto;
-	background: $color-secondary;	
 	@include flexbox();
 	flex-flow: column wrap;
 
@@ -39,7 +38,6 @@
 
 .communicate__nav {
 	margin: 0;
-	border-bottom: 2px solid transparent;
 	@include flexbox();		
 	justify-content: space-between;
 	margin-top: 4%;	
@@ -52,6 +50,7 @@
 		display: inline-flex;
 		font-size: 14px;
 		word-spacing: 0.5px;
+		border-bottom: 2px solid transparent;
 
 		&:hover,
 	    &:active,
@@ -152,9 +151,9 @@ a.communicate__link {
 	border: 2px solid transparent;
 
 	&:hover {
-		background: $color-secondary;
-		border: 2px solid $color-primary;
-		color: $color-primary;
+		background: #50DB88;
+		border: 2px solid #50DB88;
+		color: $color-secondary;
 	}
 }
 
@@ -162,8 +161,7 @@ a.communicate__link {
 	@include flexbox();
 	margin: 0;
 	justify-content: center;
-
-		margin-left: 1.5%; 
+	margin-left: 1.5%; 
 		
 
 	.communicate__slider-point {
@@ -171,9 +169,10 @@ a.communicate__link {
 		border-radius: 50%;
 		margin-top: 4.4%;
 		margin-bottom: 7%;
-		width: 14px;
-		height: 14px;
+		width: 12px;
+		height: 12px;
 		background-color: $color-primary;	
+		border: 2px solid transparent;
 		margin-right: 1.3%;
 		
 		&:hover,
