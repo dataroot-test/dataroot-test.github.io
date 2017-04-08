@@ -1,0 +1,144 @@
+.footer{
+    width: 100%;
+    max-height: 336px;
+
+    .footer__content {
+        @include flexbox();
+        max-width: 890px;
+        margin: 0 auto;
+        padding: 56px 0 0 0;
+    }
+    
+    .footer-position {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 10px;
+        padding-bottom: 38px
+    }
+    
+    .footer__logo {
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+div.footer-position {
+    @include flexbox();
+    flex-direction: column;    
+    margin-top: 1px;
+    letter-spacing: -0.5px;
+}
+
+.footer__content-metrovka {
+    margin-left: -24px;
+}
+
+.footer__content-title{
+    font-size: 16px;
+    font-weight: 500;
+    color: $font-color;
+    margin-bottom: 19px;
+    margin-top: 0px;
+}
+
+.footer__nav {
+    list-style: none;
+    margin-top: 0px;
+
+    .footer__nav-item {
+        line-height: 20px;
+        margin-bottom: 20px;
+       
+    }
+
+    .footer__nav-link,
+    .footer__nav__item-address {
+        color: $font-color;
+        font-size: 13px;
+        font-weight: 500;
+
+        small {
+            font-size: 11px;
+            line-height: 30px;
+        }
+    }
+
+    .footer__nav-link {
+        @include flexbox();
+        word-spacing: 0.5px;    
+        margin-right: 10%;
+        line-height: 24px;
+        padding-bottom: 10px;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}
+
+.footer-position{    
+    padding-left: 5%;
+    
+    .footer__nav__item {
+        width: 170px;
+        margin-left: 0;
+    }
+
+    ul {
+        padding-left: 0px;
+    }
+}
+
+.social-icons {
+    @include flexbox();
+    align-items: flex-start;
+    list-style: none;
+    margin-bottom: 11px;
+    
+    .footer__social-link {
+        margin-right: 16px;
+    }
+}
+
+.contact-icon {
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: flex-start;
+    color: $font-color;       
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+.footer__nav__mail {
+    margin-top: 11px;
+}
+
+.footer__logo {
+    @include flexbox();
+    margin: auto;
+    justify-content: flex-start;
+    background-image: url(../img/sprite.png);
+    background-position: -62px 0px;
+    width: 51px;
+    height: 47px;
+    margin-top: -5px;
+    margin-left: 48%;
+}
+
+.footer__link {
+    padding: 12px 24px 10px 22px;
+    margin-top: 4px;
+    display: inline-block;
+    font-size: 14px;
+    word-spacing: 0.05px;
+    letter-spacing: -0.05px;
+    border-radius: 2px;
+    border: 2px solid transparent;
+
+    &:hover {
+        background-color: #50DB88;
+        border: 2px solid #50DB88;
+    }
+}
