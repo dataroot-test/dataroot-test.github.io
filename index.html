@@ -458,6 +458,63 @@
 		</div>
 		<a href="#" class="icon-logo-grey footer__logo"></a>	
 	</footer>
+	
+	<section class="application__request">
+		<div class="container-app">
+			<div class="app-left app-position">
+				<h1 class="app-left__title">Оставить заявку</h1>
+				<p class="app-left__content">
+					Нет времени искать по сайту?<br> 
+					Заполняй критерии поиска и получай<br>
+					актуальные обновления как только они<br>
+					появляются на Metrovka.
+				</p>
+			</div>
+			<div class="app-right app-position">
+				<div class="application__top">
+					<form class="application__close">
+						<a href="#"><i class="fa fa-times link-cls" aria-hidden="true"></i></a>
+					</form>
+					<nav class="application__nav">
+						<a class="application__nav-item" href="#">Район</a>
+						<a class="application__nav-item" href="#">Метро</a>
+					</nav>
+				</div>
+				<div class="application__form">
+					<form class="application__submit-form">
+				        <div class="district__form-select">
+				  			<select name="district">
+								<option selected="selected">Голосеевский</option>
+								<option>Соломянский</option>
+								<option>Шевченковский</option>
+								<option>Святошинский</option>
+							</select>
+				       	</div>
+				        <div class="district__form-select__room">
+				            <p>Кол-во комнат:</p>
+				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="1" id="check-1" class="">
+				            <label for="check-1" class="select-room__label">1</label>
+				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="2" id="check-2" class="">
+				            <label for="check-2" class="select-room__label">2</label>
+				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="3" id="check-3" class="">
+				            <label for="check-3" class="select-room__label">3</label>
+				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="1" id="check-4" class="">
+				            <label for="check-4" class="select-room__label">4</label>
+				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="1" id="check-5+" class="">
+				            <label for="check-5+" class="select-room__label">5+</label>
+				        </div>
+				        <div class="input__data">
+				        	<input class="form-data" type="text" name="text" placeholder="Как вас зовут?">
+				        	<input class="form-data" type="email" name="email" placeholder="Email">
+				        </div>
+				        <div>
+				            <button class="button-secondary" type="submit">Оставить заявку</button>
+				        </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<script src="dist/script/main.js"></script>
 </body>
