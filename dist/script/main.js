@@ -3,6 +3,7 @@ $(function() {
 
   $('input, select').styler();
   $('input, checkbox').styler('destroy');
+  $('.main__filters-sort select').styler('destroy');
 
 });
 })(jQuery);
