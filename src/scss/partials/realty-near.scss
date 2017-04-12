@@ -10,27 +10,27 @@ a {
 		background: $color-secondary;
 		margin: 20px auto;
 		@include flexbox();
-		flex-flow: row wrap;
+		flex-flow: row-reverse wrap;
     	padding-bottom: 3px;
-
-		.realty-near__text {
-			width: 41%;
-			margin: 0;
-			flex-flow: column wrap;
-
-			.realty-near__nav {
-				padding-left: 11.1%;
-				padding-top: 1.5%;
-				list-style-type: none;
-				margin: 0;
-				@include flexbox();
-			}
-
-			.realty-near__nav li {
-				padding-right: 12%;
-			}
-		}
 	}
+}
+
+.realty-near__nav {
+	padding-left: 11.1%;
+	padding-top: 1.5%;
+	list-style-type: none;
+	margin: 0;
+	@include flexbox();
+}
+
+.realty-near__text {
+	width: 41%;
+	margin: 0;
+}
+
+.realty-near__nav li {
+	padding-right: 12%;
+	display: inline-block;
 }
 
 .realty-near__title {
@@ -63,10 +63,10 @@ a {
 	width: 190px;
 }
 
-a.realty-near__link {	
-	@include flexbox();
+.realty-near__link {	
+	display: inline-block;
 	margin: -1px 0 10% 10.5%;
-	justify-content: center;
+    text-align: center;
 	font-size: 14px;
 	word-spacing: 1px;
 	letter-spacing: -0.34px;	

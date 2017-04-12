@@ -20,14 +20,23 @@
     letter-spacing: -0.5px;
     margin-bottom: 29px;
 }
+
+.best__offer-wrapper,
+.latest__offer-wrapper {
+	position: relative;
+    height: 260px;
+    width: inherit;
+    overflow: hidden;
+}
+
 .best__offer-item,
 .latest__offer-item  {
-	width: 23.5%;
-	display: inline-block;
-	position: relative;
+	width: 202px;
+    display: inline-block;
+    position: absolute;
 }
 .best__offer-item-img,
-.latest__offer-item -img {
+.latest__offer-item-img {
 	position: relative;
 }
 
@@ -41,8 +50,8 @@
     height: 22px;
     background-image: url(../img/sprite.png);
 	background-position: 0px -93px;
-    right: 11%;
-    top: 10%;
+	right: 7.5%;
+    top: 10.5%;
 }
 
 .latest__offer-item-img span {
@@ -135,7 +144,7 @@
 	display: block;
 	color: $font-color;
 	padding: 6px 0;
-    margin-top: 28px;
+    margin-top: 7px;
     letter-spacing: -0.45px;
     text-align: center;
 	&:hover {

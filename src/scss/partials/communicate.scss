@@ -10,9 +10,10 @@
 	.communicate__text {
 		text-align: center;
 		margin: auto;
-		width: 35em;
+		max-width: 35em;
 		@include flexbox();
 		flex-flow: column wrap;
+		align-items: center;
 		
 		.communicate__title {
 			font-weight: 500;
@@ -39,8 +40,7 @@
 	@include flexbox();		
 	justify-content: space-between;
 	margin-top: 4%;	
-	width: 70%;
-	padding-left: 15.6%;
+	min-width: 70%;
 
 	.communicate__nav-link {
 		color: $font-color;	
@@ -155,7 +155,7 @@
 a.communicate__link {
 	@include flexbox();
 	justify-content: center;
-    margin-top: 9.43%;
+    margin-top: 9.3%;
     margin-left: 9.5%;
     padding-left: 2px;
     font-size: 14px;
