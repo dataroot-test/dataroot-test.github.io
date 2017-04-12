@@ -63,7 +63,7 @@
 				            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="1" id="check-5+" class="">
 				            <label for="check-5+" class="select-room__label">5+</label>
 				        </div>
-				        <div>
+				        <div class="search__form-button">
 				            <button class="button-secondary" type="submit">Перейти к поиску</button>
 				        </div>
 		        </form>
@@ -72,6 +72,9 @@
 	</header>
 	<section class="realty-near">
 		<div class="container wrapper">
+			<div class="realty-near__img">
+				<img src="src/img/metro.jpg" alt="metro-image">
+			</div>	
 			<div class="realty-near__text">
 				<h2 class="realty-near__title">Недвижимость возле метро</h2>
 				<ul class="realty-near__nav">
@@ -89,17 +92,15 @@
 	            	</select>
 	            </div>
 	            <a href="#" class="realty-near__link button-primary">Показать результаты поиска</a>	
-	        </div>
-			<div class="realty-near__img">
-				<img src="src/img/metro.jpg" alt="metro-image">
-			</div>			
+	        </div>		
 		</div>
 	</section>
 
 	<section class="best__offer">
-			<div class="container">
-				<h2>Лучшие предложения в Киеве</h2>
-				<div class="best__offer-item">
+		<div class="container">
+			<h2>Лучшие предложения в Киеве</h2>
+			<div class="best__offer-wrapper"> 
+				<div class="best__offer-item" style="top: 0; left: 20px;">
 					<div class="best__offer-item-img">
 						<span class="overflow-link">
 							<div class="overflow">
@@ -122,7 +123,7 @@
 						<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
 					</div>		
 				</div>
-				<div class="best__offer-item">
+				<div class="best__offer-item" style="top: 0; left: 234px;">
 					<div class="best__offer-item-img">
 						<span class="overflow-link">
 							<div class="overflow">
@@ -145,7 +146,7 @@
 						<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
 					</div>		
 				</div>
-				<div class="best__offer-item">
+				<div class="best__offer-item" style="top: 0; left: 448px;">
 					<div class="best__offer-item-img">
 						<span class="overflow-link">
 							<div class="overflow">
@@ -168,7 +169,7 @@
 						<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
 					</div>		
 				</div>
-				<div class="best__offer-item">
+				<div class="best__offer-item" style="top: 0; left: 662px;">
 					<div class="best__offer-item-img">
 						<span class="overflow-link">
 							<div class="overflow">
@@ -191,8 +192,9 @@
 						<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
 					</div>		
 				</div>
-				<a href="#" class="best__offer-more">Смотреть самые свежие обьявления</a>
 			</div>
+			<a href="#" class="best__offer-more">Смотреть лучшие ценовые предложения</a>
+		</div>
 	</section>
 
 	<section class="latest__offer">
@@ -203,99 +205,100 @@
 				<a href="#">Дома</a>
 				<a href="#">Офисы</a>
 			</div>
-			
-			<div class="latest__offer-item">
-				<div class="latest__offer-item-img">
-						<span class="overflow-link">
-							<div class="overflow">
-								<ul class="overflow__menu">
-									<li class="overflow__menu-item"><a href="#">Stop app</a></li>
-									<li class="overflow__menu-item"><a href="#">Restart app</a></li>
-									<li class="overflow__menu-item"><a href="#">Rename app</a></li>
-									<li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
-									<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
-								</ul>
-							</div>
-						</span>
-						<img src="dist/img/latest-offer-1.jpg" alt="latest-offer-flat">
-					</div>
-				
-				<div class="latest__offer-description">
-					<h3>11 800 грн<span class="latest__offer-description__check"></span></h3>
-					<div class="latest__offer-group">	
-						<span>2 комн.</span><span>&#8226;</span><span>48 кв.м.</span>
-					</div>
-					<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
-				</div>		
-			</div>
-			<div class="latest__offer-item">
-				<div class="latest__offer-item-img">
-						<span class="overflow-link">
-							<div class="overflow">
-								<ul class="overflow__menu">
-									<li class="overflow__menu-item"><a href="#">Stop app</a></li>
-									<li class="overflow__menu-item"><a href="#">Restart app</a></li>
-									<li class="overflow__menu-item"><a href="#">Rename app</a></li>
-									<li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
-									<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
-								</ul>
-							</div>
-						</span>
-						<img src="dist/img/latest-offer-2.jpg" alt="latest-offer-flat">
-					</div>
-				<div class="latest__offer-description">
-					<h3>15 000 грн<span class="latest__offer-description__check"></span></h3>
-					<div class="latest__offer-group">	
-						<span>3 комн.</span><span>&#8226;</span><span>100 кв.м.</span>
-					</div>
-					<h4><span class="metro-station metro-station-red"></span>Шулявськая</h4>
-				</div>		
-			</div>
-			<div class="latest__offer-item">
-				<div class="latest__offer-item-img">
-						<span class="overflow-link">
-							<div class="overflow">
-								<ul class="overflow__menu">
-									<li class="overflow__menu-item"><a href="#">Stop app</a></li>
-									<li class="overflow__menu-item"><a href="#">Restart app</a></li>
-									<li class="overflow__menu-item"><a href="#">Rename app</a></li>
-									<li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
-									<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
-								</ul>
-							</div>
-						</span>
-						<img src="dist/img/latest-offer-3.jpg" alt="latest-offer-flat">
-					</div>
-				<div class="latest__offer-description">
-					<h3>11 800 грн<span class="latest__offer-description__check"></span></h3>
-					<div class="latest__offer-group">	
-						<span>1 комн.</span><span>&#8226;</span><span>30 кв.м.</span>
-					</div>
-					<h4><span class="metro-station metro-station-blue"></span>Контрактовая площадь</h4>
-				</div>		
-			</div>
-			<div class="latest__offer-item">
-				<div class="latest__offer-item-img">
-						<span class="overflow-link">
-							<div class="overflow">
-								<ul class="overflow__menu">
-									<li class="overflow__menu-item"><a href="#">Stop app</a></li>
-									<li class="overflow__menu-item"><a href="#">Restart app</a></li>
-									<li class="overflow__menu-item"><a href="#">Rename app</a></li>
-									<li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
-									<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
-								</ul>
-							</div>
-						</span>
-						<img src="dist/img/best-offer.jpg" alt="latest-offer-flat">
-					</div>
-				<div class="latest__offer-description">
-					<h3>7 000 грн<span class="latest__offer-description__check"></span></h3>
-					<div class="latest__offer-group">	
-						<span>2 комн.</span><span>&#8226;</span><span>40 кв.м.</span>
-					</div>
-					<h4><span></span>просп. Победы, 18А</h4>
-				</div>		
+			<div class="latest__offer-wrapper"> 
+				<div class="latest__offer-item" style="top: 0; left: 19px;">
+					<div class="latest__offer-item-img">
+							<span class="overflow-link">
+								<div class="overflow">
+									<ul class="overflow__menu">
+										<li class="overflow__menu-item"><a href="#">Stop app</a></li>
+										<li class="overflow__menu-item"><a href="#">Restart app</a></li>
+										<li class="overflow__menu-item"><a href="#">Rename app</a></li>
+										<li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
+										<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
+									</ul>
+								</div>
+							</span>
+							<img src="dist/img/latest-offer-1.jpg" alt="latest-offer-flat">
+						</div>
+					
+					<div class="latest__offer-description">
+						<h3>11 800 грн<span class="latest__offer-description__check"></span></h3>
+						<div class="latest__offer-group">	
+							<span>2 комн.</span><span>&#8226;</span><span>48 кв.м.</span>
+						</div>
+						<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
+					</div>		
+				</div>
+				<div class="latest__offer-item" style="top: 0; left: 234px;">
+					<div class="latest__offer-item-img">
+							<span class="overflow-link">
+								<div class="overflow">
+									<ul class="overflow__menu">
+										<li class="overflow__menu-item"><a href="#">Stop app</a></li>
+										<li class="overflow__menu-item"><a href="#">Restart app</a></li>
+										<li class="overflow__menu-item"><a href="#">Rename app</a></li>
+										<li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
+										<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
+									</ul>
+								</div>
+							</span>
+							<img src="dist/img/latest-offer-2.jpg" alt="latest-offer-flat">
+						</div>
+					<div class="latest__offer-description">
+						<h3>15 000 грн<span class="latest__offer-description__check"></span></h3>
+						<div class="latest__offer-group">	
+							<span>3 комн.</span><span>&#8226;</span><span>100 кв.м.</span>
+						</div>
+						<h4><span class="metro-station metro-station-red"></span>Шулявськая</h4>
+					</div>		
+				</div>
+				<div class="latest__offer-item" style="top: 0; left: 448px;">
+					<div class="latest__offer-item-img">
+							<span class="overflow-link">
+								<div class="overflow">
+									<ul class="overflow__menu">
+										<li class="overflow__menu-item"><a href="#">Stop app</a></li>
+										<li class="overflow__menu-item"><a href="#">Restart app</a></li>
+										<li class="overflow__menu-item"><a href="#">Rename app</a></li>
+										<li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
+										<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
+									</ul>
+								</div>
+							</span>
+							<img src="dist/img/latest-offer-3.jpg" alt="latest-offer-flat">
+						</div>
+					<div class="latest__offer-description">
+						<h3>11 800 грн<span class="latest__offer-description__check"></span></h3>
+						<div class="latest__offer-group">	
+							<span>1 комн.</span><span>&#8226;</span><span>30 кв.м.</span>
+						</div>
+						<h4><span class="metro-station metro-station-blue"></span>Контрактовая площадь</h4>
+					</div>		
+				</div>
+				<div class="latest__offer-item" style="top: 0; left: 662px;">
+					<div class="latest__offer-item-img">
+							<span class="overflow-link">
+								<div class="overflow">
+									<ul class="overflow__menu">
+										<li class="overflow__menu-item"><a href="#">Stop app</a></li>
+										<li class="overflow__menu-item"><a href="#">Restart app</a></li>
+										<li class="overflow__menu-item"><a href="#">Rename app</a></li>
+										<li class="overflow__menu-item"><a href="#">Edit routes and access</a></li>
+										<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
+									</ul>
+								</div>
+							</span>
+							<img src="dist/img/best-offer.jpg" alt="latest-offer-flat">
+						</div>
+					<div class="latest__offer-description">
+						<h3>7 000 грн<span class="latest__offer-description__check"></span></h3>
+						<div class="latest__offer-group">	
+							<span>2 комн.</span><span>&#8226;</span><span>40 кв.м.</span>
+						</div>
+						<h4><span></span>просп. Победы, 18А</h4>
+					</div>		
+				</div>
 			</div>
 			<a href="#" class="latest__offer-more">Смотреть самые свежие обьявления</a>
 		</div>
@@ -328,7 +331,9 @@
 								<li>Общайтесь с клиентами через специальный канал телекоммуникации</li>
 							</ol>
 						</div>
-						<a href="#" class="communicate__link button-primary">Присоединиться в Telegram</a>
+						<div class="communicate__slider-follow">
+							<a href="#" class="communicate__link button-primary">Присоединиться в Telegram</a>
+						</div>
 					</div>
 				</div>
 				<div class="communicate__slider-ovals">
@@ -431,17 +436,20 @@
 				<h3 class="footer__content-title">Контакты</h3>					
 				<div class="footer__nav-contacts">
 					<ul class="footer__nav">
-                        <ul class=social-icons>
-                            <li class=footer__social-link>
-                                <a href="#"><i class="fa fa-facebook-official contact-icon" aria-hidden="true"></i></a>
-                            </li>
-                            <li class=footer__social-link>
-                                <a href="#"><i class="fa fa-vk contact-icon" aria-hidden="true"></i></a>
-                            </li>
-                            <li class=footer__social-link>
-                                <a href="#"><i class="fa fa-instagram contact-icon" aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
+						<li class="footer__nav__item">
+							<ul class=social-icons>
+	                            <li class=footer__social-link>
+	                                <a href="#"><i class="fa fa-facebook-official contact-icon" aria-hidden="true"></i></a>
+	                            </li>
+	                            <li class=footer__social-link>
+	                                <a href="#"><i class="fa fa-vk contact-icon" aria-hidden="true"></i></a>
+	                            </li>
+	                            <li class=footer__social-link>
+	                                <a href="#"><i class="fa fa-instagram contact-icon" aria-hidden="true"></i></a>
+	                            </li>
+                        	</ul>
+						</li>
+                        
                         <li class="footer__nav__item">
                             <div class="footer__nav__item-address">
                                 ул. Жилянская, 37<br>
@@ -456,7 +464,10 @@
                 </ul>
             </div>			
 		</div>
-		<a href="#" class="icon-logo-grey footer__logo"></a>	
+		<div class="footer__logo">
+			<a href="#" class="icon-logo-grey footer__logo-link"></a>	
+		</div>
+		
 	</footer>
 	
 	<section class="application__request" style="display: none;" id="applyRequest">
