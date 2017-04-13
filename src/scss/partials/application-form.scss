@@ -61,6 +61,8 @@ a {
 	    &:active,
 	    &:focus {
 	    	border-bottom: 2px solid $color-primary;
+	    	transition: 1s;
+	    	outline: none;
 		}
 	}
 }
@@ -79,6 +81,8 @@ a {
 
     &:hover {
         color: #E71D32;
+        transition: 1s;
+        outline: none;
     }
 }
 
@@ -137,7 +141,7 @@ input[type=checkbox]:checked.dcheckbox  + label {
 	font-size: 14px;
 	padding-left: 15px;
     box-sizing: border-box;
-     font-size: 12px;
+    font-size: 12px;
 }
 
 
@@ -155,10 +159,14 @@ input[type=checkbox]:checked.dcheckbox  + label {
     border-radius: 2px;
     border: 2px solid transparent;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
     	color: $color-secondary;
         background: #50DB88;
         border: 2px solid #50DB88;
+        transition: 1s;
+        outline: none;
     }
 }
 

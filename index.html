@@ -17,12 +17,12 @@
 		<header class="header">
 			<div class="container clearfix">
 				<div class="header__top">
-					<a href="#" class="header__logo"></a>
+					<a href="#" class="logo"></a>
 					<nav class="header__nav">
-						<a class="header__nav-item" href="#">Аренда</a>
-						<a class="header__nav-item" href="#">Продажа</a>
-						<a class="header__nav-item" href="#">Посуточно</a>
-						<div class="header__nav-item overflow-link" href="#"><span></span>Еще
+						<a class="header__nav-link" href="#">Аренда</a>
+						<a class="header__nav-link" href="#">Продажа</a>
+						<a class="header__nav-link" href="#">Посуточно</a>
+						<div class="header__nav-link overflow-link" href="#"><span></span><p>Еще</p>
 							<div class="overflow">
 								<ul class="overflow__menu">
 									<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -35,13 +35,13 @@
 						</div>
 					</nav>
 					<div class="header__right">
-						<a class="header__button-new__ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a>
-						<a class="header__button-login"  href="#">Войти</a>
+						<a class="button__new-ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a>
+						<a class="button-log"  href="#">Войти</a>
 					</div>
 				</div>
 				<h1 class="header__title">Поиск недвижимости в Украине</h1>
 				<div class="header__bottom">
-					<form class="header__search-form">
+					<form class="search-form">
 					        <div class="search__form-select">
 					            <p>Выберите город:</p>
 					  			<select name="city">
@@ -65,25 +65,25 @@
 					            <label for="check-5+" class="select-room__label">5+</label>
 					        </div>
 					        <div class="search__form-button">
-					            <button class="button-secondary" type="submit">Перейти к поиску</button>
+					            <a href="#" class="button-secondary">Перейти к поиску</a>
 					        </div>
 			        </form>
 				</div>
 			</div>
 		</header>
-		<section class="realty-near">
+		<section class="realty">
 			<div class="container wrapper">
-				<div class="realty-near__img">
+				<div class="realty__img">
 					<img src="src/img/metro.jpg" alt="metro-image">
 				</div>	
-				<div class="realty-near__text">
-					<h2 class="realty-near__title">Недвижимость возле метро</h2>
-					<ul class="realty-near__nav">
-						<li><a href="#" class="realty-near-link">Квартиры</a></li>
-						<li><a href="#" class="realty-near-link">Дома</a></li>
-						<li><a href="#" class="realty-near-link">Офисы</a></li>            
+				<div class="realty__text">
+					<h2 class="realty__title">Недвижимость возле метро</h2>
+					<ul class="realty__nav">
+						<li><a href="#" class="realty__link">Квартиры</a></li>
+						<li><a href="#" class="realty__link">Дома</a></li>
+						<li><a href="#" class="realty__link">Офисы</a></li>            
 					</ul>
-		            <div class="select-metro">
+		            <div class="select-location">
 		            	<select name="Metro select" class="select">
 			            	<option selected="selected"><span class="metro-station metro-station-red"></span>Политехнический институт</option>
 			            	<option><span class="metro-station metro-station-red">Шулявская</option>
@@ -92,17 +92,17 @@
 							<option><span class="metro-station metro-station-green">Позняки</option>
 		            	</select>
 		            </div>
-		            <a href="#" class="realty-near__link button-primary">Показать результаты поиска</a>	
+		            <a href="#" class="realty__button button-primary">Показать результаты поиска</a>	
 		        </div>		
 			</div>
 		</section>
 
-		<section class="best__offer">
+		<section class="offer">
 			<div class="container">
 				<h2>Лучшие предложения в Киеве</h2>
-				<div class="best__offer-wrapper"> 
-					<div class="best__offer-item" style="top: 0; left: 20px;">
-						<div class="best__offer-item-img">
+				<div class="offer-wrapper"> 
+					<div class="offer-item" style="top: 0; left: 20px;">
+						<div class="offer-item-img">
 							<span class="overflow-link">
 								<div class="overflow">
 									<ul class="overflow__menu">
@@ -116,16 +116,16 @@
 							</span>
 							<img src="dist/img/best-offer.jpg" alt="best-offer-flat">
 						</div>
-						<div class="best__offer-description">
-							<h3>7 800 грн<span class="best__offer-description__check"></span></h3>
-							<div class="best__offer-group">	
+						<div class="offer-description">
+							<h3>7 800 грн<span class="offer-description__check"></span></h3>
+							<div class="offer-group">	
 								<span>2 комн.</span><span>&#8226;</span><span>30 кв.м.</span>
 							</div>
 							<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
 						</div>		
 					</div>
-					<div class="best__offer-item" style="top: 0; left: 234px;">
-						<div class="best__offer-item-img">
+					<div class="offer-item" style="top: 0; left: 234px;">
+						<div class="offer-item-img">
 							<span class="overflow-link">
 								<div class="overflow">
 									<ul class="overflow__menu">
@@ -139,16 +139,16 @@
 							</span>
 							<img src="dist/img/best-offer.jpg" alt="best-offer-flat">
 						</div>
-						<div class="best__offer-description">
-							<h3>10 200 грн<span class="best__offer-description__check"></span></h3>
-							<div class="best__offer-group">	
+						<div class="offer-description">
+							<h3>10 200 грн<span class="offer-description__check"></span></h3>
+							<div class="offer-group">	
 								<span>1 комн.</span><span>&#8226;</span><span>30 кв.м.</span>
 							</div>
 							<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
 						</div>		
 					</div>
-					<div class="best__offer-item" style="top: 0; left: 448px;">
-						<div class="best__offer-item-img">
+					<div class="offer-item" style="top: 0; left: 448px;">
+						<div class="offer-item-img">
 							<span class="overflow-link">
 								<div class="overflow">
 									<ul class="overflow__menu">
@@ -162,16 +162,16 @@
 							</span>
 							<img src="dist/img/best-offer.jpg" alt="best-offer-flat">
 						</div>
-						<div class="best__offer-description">
-							<h3>6 900 грн<span class="best__offer-description__check"></span></h3>
-							<div class="best__offer-group">	
+						<div class="offer-description">
+							<h3>6 900 грн<span class="offer-description__check"></span></h3>
+							<div class="offer-group">	
 								<span>2 комн.</span><span>&#8226;</span><span>30 кв.м.</span>
 							</div>
 							<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
 						</div>		
 					</div>
-					<div class="best__offer-item" style="top: 0; left: 662px;">
-						<div class="best__offer-item-img">
+					<div class="offer-item" style="top: 0; left: 662px;">
+						<div class="offer-item-img">
 							<span class="overflow-link">
 								<div class="overflow">
 									<ul class="overflow__menu">
@@ -185,20 +185,20 @@
 							</span>
 							<img src="dist/img/best-offer.jpg" alt="best-offer-flat">
 						</div>
-						<div class="best__offer-description">
-							<h3>9 000 грн<span class="best__offer-description__check"></span></h3>
-							<div class="best__offer-group">	
+						<div class="offer-description">
+							<h3>9 000 грн<span class="offer-description__check"></span></h3>
+							<div class="offer-group">	
 								<span>2 комн.</span><span>&#8226;</span><span>30 кв.м.</span>
 							</div>
 							<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
 						</div>		
 					</div>
 				</div>
-				<a href="#" class="best__offer-more">Смотреть лучшие ценовые предложения</a>
+				<a href="#" class="offer-more">Смотреть лучшие ценовые предложения</a>
 			</div>
 		</section>
 
-		<section class="latest__offer">
+		<section class="latest__offer offer">
 			<div class="container">
 				<h2>Последние обьявления в Киеве</h2>
 				<div class="latest__offer-check">
@@ -206,9 +206,9 @@
 					<a href="#">Дома</a>
 					<a href="#">Офисы</a>
 				</div>
-				<div class="latest__offer-wrapper"> 
-					<div class="latest__offer-item" style="top: 0; left: 19px;">
-						<div class="latest__offer-item-img">
+				<div class="latest__offer-wrapper offer-wrapper"> 
+					<div class="latest__offer-item offer-item" style="top: 0; left: 19px;">
+						<div class="latest__offer-item-img offer-item-img">
 								<span class="overflow-link">
 									<div class="overflow">
 										<ul class="overflow__menu">
@@ -223,16 +223,16 @@
 								<img src="dist/img/latest-offer-1.jpg" alt="latest-offer-flat">
 							</div>
 						
-						<div class="latest__offer-description">
-							<h3>11 800 грн<span class="latest__offer-description__check"></span></h3>
-							<div class="latest__offer-group">	
+						<div class="latest__offer-description offer-description">
+							<h3>11 800 грн<span class="latest__offer-description__check offer-description__check"></span></h3>
+							<div class="latest__offer-group offer-group">	
 								<span>2 комн.</span><span>&#8226;</span><span>48 кв.м.</span>
 							</div>
 							<h4><span class="metro-station metro-station-red"></span>Политехнический институт</h4>
 						</div>		
 					</div>
-					<div class="latest__offer-item" style="top: 0; left: 234px;">
-						<div class="latest__offer-item-img">
+					<div class="latest__offer-item offer-item" style="top: 0; left: 234px;">
+						<div class="latest__offer-item-img offer-item-img">
 								<span class="overflow-link">
 									<div class="overflow">
 										<ul class="overflow__menu">
@@ -246,16 +246,16 @@
 								</span>
 								<img src="dist/img/latest-offer-2.jpg" alt="latest-offer-flat">
 							</div>
-						<div class="latest__offer-description">
-							<h3>15 000 грн<span class="latest__offer-description__check"></span></h3>
-							<div class="latest__offer-group">	
+						<div class="latest__offer-description offer-description">
+							<h3>15 000 грн<span class="latest__offer-description__check offer-description__check"></span></h3>
+							<div class="latest__offer-group offer-group">	
 								<span>3 комн.</span><span>&#8226;</span><span>100 кв.м.</span>
 							</div>
 							<h4><span class="metro-station metro-station-red"></span>Шулявськая</h4>
 						</div>		
 					</div>
-					<div class="latest__offer-item" style="top: 0; left: 448px;">
-						<div class="latest__offer-item-img">
+					<div class="latest__offer-item offer-item" style="top: 0; left: 448px;">
+						<div class="latest__offer-item-img offer-item-img">
 								<span class="overflow-link">
 									<div class="overflow">
 										<ul class="overflow__menu">
@@ -269,16 +269,16 @@
 								</span>
 								<img src="dist/img/latest-offer-3.jpg" alt="latest-offer-flat">
 							</div>
-						<div class="latest__offer-description">
-							<h3>11 800 грн<span class="latest__offer-description__check"></span></h3>
-							<div class="latest__offer-group">	
+						<div class="latest__offer-description offer-description">
+							<h3>11 800 грн<span class="latest__offer-description__check offer-description__check"></span></h3>
+							<div class="latest__offer-group offer-group">	
 								<span>1 комн.</span><span>&#8226;</span><span>30 кв.м.</span>
 							</div>
 							<h4><span class="metro-station metro-station-blue"></span>Контрактовая площадь</h4>
 						</div>		
 					</div>
-					<div class="latest__offer-item" style="top: 0; left: 662px;">
-						<div class="latest__offer-item-img">
+					<div class="latest__offer-item offer-item" style="top: 0; left: 662px;">
+						<div class="latest__offer-item-img offer-item-img">
 								<span class="overflow-link">
 									<div class="overflow">
 										<ul class="overflow__menu">
@@ -292,16 +292,16 @@
 								</span>
 								<img src="dist/img/best-offer.jpg" alt="latest-offer-flat">
 							</div>
-						<div class="latest__offer-description">
-							<h3>7 000 грн<span class="latest__offer-description__check"></span></h3>
-							<div class="latest__offer-group">	
+						<div class="latest__offer-description offer-description">
+							<h3>7 000 грн<span class="latest__offer-description__check offer-description__check"></span></h3>
+							<div class="latest__offer-group offer-group">	
 								<span>2 комн.</span><span>&#8226;</span><span>40 кв.м.</span>
 							</div>
 							<h4><span></span>просп. Победы, 18А</h4>
 						</div>		
 					</div>
 				</div>
-				<a href="#" class="latest__offer-more">Смотреть самые свежие обьявления</a>
+				<a href="#" class="latest__offer-more offer-more">Смотреть самые свежие обьявления</a>
 			</div>
 		</section>
 		<section class="communicate">
@@ -337,7 +337,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="communicate__slider-ovals">
+					<div class="communicate__slider-pagination">
 						<a href="#" class="communicate__slider-point"></a>
 						<a href="#" class="communicate__slider-point"></a>
 					</div>
@@ -350,21 +350,21 @@
 				<h2>Блог Metrovka</h2>
 	        	<p class="blog__subtitle">Хитрости, приемы, советы, фото и видео - все о том, как продать, купить, сдать в аренду или арендовать недвижимость.</p>
 			    <div class="blog__item">
-			        <img src="dist/img/blog-1.jpg">
+			        <img src="dist/img/blog-1.jpg" alt="communal payments">
 					<a class="blog__item-category category-lifehack" href="#">ЛАЙФХАК</a>
 			        <a class="blog__item-title" href="">Киевляне могут оплатить коммуналку через Facebook...</a>
 					<p class="blog__item-author">Татьяна Малыняк <span>&#8226;</span></p>
 					<p class="blog__item-time">5 мин чтения</p>
 			    </div>
 			    <div class="blog__item">
-			        <img src="dist/img/blog-2.jpg">
+			        <img src="dist/img/blog-2.jpg" alt="cheap apartments">
 					<a class="blog__item-category category-advice" href="#">СОВЕТ METROVKA</a>
 			        <a class="blog__item-title" href="">ТОП-5 самых дешевых квартир Киева</a>
 					<p class="blog__item-author">Татьяна Малыняк <span>&#8226;</span></p>
 					<p class="blog__item-time">4 мин чтения</p>
 			    </div>
 			    <div class="blog__item">
-			        <img src="dist/img/blog-3.jpg">
+			        <img src="dist/img/blog-3.jpg" alt="smart apartments">
 					<a class="blog__item-category category-technologies" href="#">ТЕХНОЛОГИИ</a>
 			        <a class="blog__item-title" href="">Смарт-квартиры: цены, предложения и законность</a>
 					<p class="blog__item-author">Татьяна Малыняк <span>&#8226;</span></p>
@@ -378,7 +378,7 @@
 			<div class="container footer__content">
 				<div class="footer__content-metrovka footer-position">
 					<h3 class="footer__content-title">Metrovka</h3>
-					<div class="footer__nav-metrovka">	
+					<div>	
 						<ul class="footer__nav">
 	                        <li class="footer__nav__item">
 	                            <a href="#" class="footer__nav-link">О компании</a>
@@ -400,7 +400,7 @@
 				</div>
 				<div class="footer__content-partners footer-position">
 					<h3 class="footer__content-title">Партнерство</h3>
-					<div class="footer__nav-partnership">
+					<div>
 						<ul class="footer__nav">
 	                        <li class="footer__nav__item">
 	                            <a href="#" class="footer__nav-link">Как разместить объявление</a>
@@ -416,7 +416,7 @@
 				</div>
 				<div class="footer__content-more footer-position">
 					<h3 class="footer__content-title">Узнайте больше</h3>
-					<div class="footer__nav-more">
+					<div>
 						<ul class="footer__nav">
 	                        <li class="footer__nav__item">
 	                            <a href="#" class="footer__nav-link">Бонусная программа Bonus+</a>
@@ -435,7 +435,7 @@
 				</div>
 				<div class="footer__content-contacts footer-position">
 					<h3 class="footer__content-title">Контакты</h3>					
-					<div class="footer__nav-contacts">
+					<div>
 						<ul class="footer__nav">
 							<li class="footer__nav__item">
 								<ul class=social-icons>
@@ -532,13 +532,13 @@
 	   <div class="hamburger-icon"></div>
 	   <nav>
 	      <ul>
-	         <li><a href="#" class="header__nav-item">Продажа</a></li>
-	         <li><a href="#" class="header__nav-item">Посуточно</a></li>
-	         <li><a href="#" class="header__nav-item">Блог</a></li>
-	         <li><a href="#" class="header__nav-item">Контакты</a></li>
-	         <li><a href="#" class="header__nav-item">Новый поиск</a></li>
-	         <li><a class="header__button-new__ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a></li>
-	        <li><a class="header__button-login"  href="#">Войти</a></li>
+	         <li><a href="#" class="header__nav-link">Продажа</a></li>
+	         <li><a href="#" class="header__nav-link">Посуточно</a></li>
+	         <li><a href="#" class="header__nav-link">Блог</a></li>
+	         <li><a href="#" class="header__nav-link">Контакты</a></li>
+	         <li><a href="#" class="header__nav-link">Новый поиск</a></li>
+	         <li><a class="button__new-ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a></li>
+	        <li><a class="button-log"  href="#">Войти</a></li>
 					
 	      </ul>
 	   </nav>

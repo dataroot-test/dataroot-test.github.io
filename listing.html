@@ -18,12 +18,12 @@
 		<header class="header listing__header">
 			<div class="container clearfix">
 				<div class="header__top">
-					<a href="#" class="header__logo"></a>
+					<a href="#" class="logo"></a>
 					<nav class="header__nav">
-						<a class="header__nav-item" href="#">Аренда</a>
-						<a class="header__nav-item" href="#">Продажа</a>
-						<a class="header__nav-item" href="#">Посуточно</a>
-						<div class="header__nav-item overflow-link" href="#"><span></span>Еще
+						<a class="header__nav-link" href="#">Аренда</a>
+						<a class="header__nav-link" href="#">Продажа</a>
+						<a class="header__nav-link" href="#">Посуточно</a>
+						<div class="header__nav-link overflow-link" href="#"><span></span><p>Еще</p>
 							<div class="overflow">
 								<ul class="overflow__menu">
 									<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -36,21 +36,21 @@
 						</div>
 					</nav>
 					<div class="header__right">
-						<a class="header__button-new__ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a>
-						<a class="header__button-login"  href="#">Войти</a>
+						<a class="button__new-ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a>
+						<a class="button-log"  href="#">Войти</a>
 					</div>
 				</div>
 			</div>
 		</header>
 		<main class="main">
 			<div class="container">
-				<div class="main__breadcrumbs">
-	                <ul class="main__breadcrumb-menu">
-	                    <li><a href="#">Долгосрочная аренда <span>/</span></a></li>
-	                    <li><a href="#">Квартиры<span>/</span></a></li>
+				<div class="breadcrumbs">
+	                <ul class="breadcrumbs__menu">
+	                    <li><a href="#">Долгосрочная аренда</a><span>/</span></li>
+	                    <li><a href="#">Квартиры</a><span>/</span></li>
 	                    <li><a href="#">Киев</a></li>
 	                </ul>
-	                <a href="#" class="main__breadcrumb-back">Назад на главную</a>
+	                <a href="#" class="breadcrumbs__back">Назад на главную</a>
 	            </div>
 	            <h2>Долгосрочная аренда квартир в Киеве</h2>
 				<div class="main__filters">
@@ -75,13 +75,13 @@
 		<section class="offer__item">
 			<div class="offer__item-content">
 				<div class="offer__item-main">
-					<div class="rooms-img">
+					<div class="offer__item-img">
 						<img src="dist/img/listing-item1.jpg" alt="image-room">
 					</div>
 					<div class="offer__item-group">
 						<div class="offer__item-description">
-							<a href="#" class="offer__item-link-title">2 комн., Дарницкий р-н, Пчелки 2б</a>
-							<p class="offer__item-description__metro"><span class="metro-station metro-station-green"></span>Позняки<span class="offer__item-length">30 мин пешком</span></p>	
+							<a href="#" class="offer__item-title">2 комн., Дарницкий р-н, Пчелки 2б</a>
+							<p class="offer__item-location"><span class="metro-station metro-station-green"></span>Позняки<span class="offer__item-length">30 мин пешком</span></p>	
 
 							<h4>Особенности</h4>
 							<div class="offer__item-detailed">	
@@ -119,13 +119,13 @@
 
 			<div class="offer__item-content">
 				<div class="offer__item-main">
-					<div class="rooms-img">
+					<div class="offer__item-img">
 						<img src="dist/img/listing-item2.jpg" alt="image-room">
 					</div>
 					<div class="offer__item-group">
 						<div class="offer__item-description">
-							<a href="#" class="offer__item-link-title">2 комн., Оболонский р-н, Полярная 20</a>
-							<p class="offer__item-description__metro"><span class="metro-station metro-station-blue"></span>Героев Днепра<span class="offer__item-length">10 мин пешком</span></p>	
+							<a href="#" class="offer__item-title">2 комн., Оболонский р-н, Полярная 20</a>
+							<p class="offer__item-location"><span class="metro-station metro-station-blue"></span>Героев Днепра<span class="offer__item-length">10 мин пешком</span></p>	
 
 							<h4>Особенности</h4>
 							<div class="offer__item-detailed">	
@@ -163,13 +163,13 @@
 
 			<div class="offer__item-content">
 				<div class="offer__item-main">
-					<div class="rooms-img">
+					<div class="offer__item-img">
 						<img src="dist/img/listing-item3.jpg" alt="image-room">
 					</div>
 					<div class="offer__item-group">
 						<div class="offer__item-description">
-							<a href="#" class="offer__item-link-title">2 комн., Оболонский р-н, Полярная 20</a>
-							<p class="offer__item-description__metro"><span class="metro-station metro-station-blue"></span>Героев Днепра<span class="offer__item-length">10 мин пешком</span></p>	
+							<a href="#" class="offer__item-title">2 комн., Оболонский р-н, Полярная 20</a>
+							<p class="offer__item-location"><span class="metro-station metro-station-blue"></span>Героев Днепра<span class="offer__item-length">10 мин пешком</span></p>	
 
 							<h4>Особенности</h4>
 							<div class="offer__item-detailed">	
@@ -210,7 +210,7 @@
 			<div class="container footer__content">
 				<div class="footer__content-metrovka footer-position">
 					<h3 class="footer__content-title">Metrovka</h3>
-					<div class="footer__nav-metrovka">	
+					<div>	
 						<ul class="footer__nav">
 	                        <li class="footer__nav__item">
 	                            <a href="#" class="footer__nav-link">О компании</a>
@@ -232,7 +232,7 @@
 				</div>
 				<div class="footer__content-partners footer-position">
 					<h3 class="footer__content-title">Партнерство</h3>
-					<div class="footer__nav-partnership">
+					<div>
 						<ul class="footer__nav">
 	                        <li class="footer__nav__item">
 	                            <a href="#" class="footer__nav-link">Как разместить объявление</a>
@@ -248,7 +248,7 @@
 				</div>
 				<div class="footer__content-more footer-position">
 					<h3 class="footer__content-title">Узнайте больше</h3>
-					<div class="footer__nav-more">
+					<div>
 						<ul class="footer__nav">
 	                        <li class="footer__nav__item">
 	                            <a href="#" class="footer__nav-link">Бонусная программа Bonus+</a>
@@ -267,7 +267,7 @@
 				</div>
 				<div class="footer__content-contacts footer-position">
 					<h3 class="footer__content-title">Контакты</h3>					
-					<div class="footer__nav-contacts">
+					<div>
 						<ul class="footer__nav">
 	                        <ul class=social-icons>
 	                            <li class=footer__social-link>
@@ -359,13 +359,13 @@
 	   <div class="hamburger-icon"></div>
 	   <nav>
 	      <ul>
-	         <li><a href="#" class="header__nav-item">Продажа</a></li>
-	         <li><a href="#" class="header__nav-item">Посуточно</a></li>
-	         <li><a href="#" class="header__nav-item">Блог</a></li>
-	         <li><a href="#" class="header__nav-item">Контакты</a></li>
-	         <li><a href="#" class="header__nav-item">Новый поиск</a></li>
-	         <li><a class="header__button-new__ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a></li>
-	        <li><a class="header__button-login"  href="#">Войти</a></li>
+	         <li><a href="#" class="header__nav-link">Продажа</a></li>
+	         <li><a href="#" class="header__nav-link">Посуточно</a></li>
+	         <li><a href="#" class="header__nav-link">Блог</a></li>
+	         <li><a href="#" class="header__nav-link">Контакты</a></li>
+	         <li><a href="#" class="header__nav-link">Новый поиск</a></li>
+	         <li><a class="button__new-ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a></li>
+	        <li><a class="button-log"  href="#">Войти</a></li>
 					
 	      </ul>
 	   </nav>

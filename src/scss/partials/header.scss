@@ -14,15 +14,15 @@
 	display: none;
 }
 
-.header__logo, 
-.header__nav-item,
+.logo, 
+.header__nav-link,
 .header__nav,
 .header__top,
 .header__bottom {
 	@include flexbox();
 }
 
-.header__nav-item {
+.header__nav-link {
 	color: $color-secondary;
 	text-decoration: none;
 	line-height: 20px;
@@ -32,14 +32,18 @@
     border-bottom: 2px solid transparent;
     height: 20px;
     @include flexbox();
+
     &:hover,
     &:active,
     &:focus {
     	border-bottom: 2px solid #fff;
+    	transition: 1s;
+    	outline: none;
+    	outline: none;
 	}
 }
 
-.header__logo {
+.logo {
 	background-image: url(../img/sprite.png);
 	background-position: 0px -62px;
 	width: 32px;
@@ -47,7 +51,7 @@
     margin-right: 4.65%;
 }
 
-.header__nav-item span {
+.header__nav-link span {
 	background-image: url(../img/sprite.png);
 	background-position: -62px -47px;
 	width: 20px;
@@ -57,8 +61,8 @@
 	@include flexbox();
 }
 
-.header__button-new__ad,
-.header__button-login {
+.button__new-ad,
+.button-log {
 	@include flexbox();
 	color: $color-secondary;
 	padding: 11px 0;
@@ -66,21 +70,32 @@
 	margin-top: -2px;
 }
 
-.header__button-new__ad {
+.button__new-ad {
 	background-color: rgba(255,255,255,.15);
 	padding: 11px 25px 11px 13px;
-	&:hover {
+
+	&:hover,
+    &:active,
+    &:focus {
 		color: #30ae63;
 	    background-color: $color-secondary;
+	    transition: 1s;
+	    outline: none;
 	}
 }
 
-.header__button-login  {
+.button-log  {
 	padding: 11px 8px 11px 16px;
 	margin-top: -1px;
-	&:hover {
+
+	&:hover,
+    &:active,
+    &:focus  {
 		color: #30ae63;
 	    background-color: $color-secondary;
+	    transition: 1s;
+	    outline: none;
+
 	}
 }
 
@@ -106,7 +121,7 @@
 	display: inline-flex;
 }
 
-.header__search-form {
+.search-form {
 	display: inline-flex;
 	align-items: flex-end;
 }
@@ -172,16 +187,22 @@ input[type=checkbox]:checked + label {
 	 color: #152935;
 }
 
-.header__search-form button {
+.search-form a {
 	background: #fff;
     color: #30ae63;
-    padding: 13px 57px 13px 26px;
+    padding: 13px 52px 13px 26px;
     line-height: 13px;
     margin-bottom: 2px;
     margin-left: 50px;
-    &:hover {
+    display: block;
+    
+    &:hover,
+    &:active,
+    &:focus  {
 		background-color: #30ae63;
     	color: #fff;
     	cursor: pointer;
+    	transition: 1s;
+    	outline: none;
     }
 }

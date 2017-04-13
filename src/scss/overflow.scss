@@ -1,10 +1,16 @@
+.overflow-link p {
+	margin: 0;
+}
 .overflow__menu-item {
 	list-style: none;
 	padding: 7.5px 16px;
 	width: 170px;
-	&:hover {
+	&:hover,
+	&:active,
+	&:focus {
 		background: $color-primary;
 		cursor: pointer;
+		transition: 1s;
 		
 		& a {
 			color: #fff;
@@ -20,10 +26,13 @@
 	border-top: 2px solid #D8D8D8;
 }
 
-.overflow__menu-delete:hover {
+.overflow__menu-delete:hover,
+.overflow__menu-delete:active,
+.overflow__menu-delete:focus {
 	background: #E71D32;
 	border-bottom: 2px solid transparent;
 	border-top: 2px solid transparent;
+	transition: 1s;
 }
 
 .overflow__menu {
@@ -60,8 +69,11 @@
     text-align: left;
 }
 
-.overflow-link:hover  .overflow {
+.overflow-link:hover  .overflow,
+.overflow-link:active  .overflow,
+.overflow-link:focus  .overflow {
 	display: block;
+	transition: 0.5s;
 }
 
 

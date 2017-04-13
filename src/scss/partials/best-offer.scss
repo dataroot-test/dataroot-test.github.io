@@ -1,18 +1,15 @@
-.best__offer,
-.latest__offer,
+.offer,
 .blog {
 	margin-top: 20px;
 }
-.best__offer .container,
-.latest__offer .container,
+.offer .container,
 .blog .container {
 	background: $color-secondary;
 	text-align: center;
 	padding: 1px 0px 0 0px;
 }
 
-.best__offer h2,
-.latest__offer  h2,
+.offer  h2,
 .blog h2 {
 	text-align: center;
     font-size: 24px;
@@ -21,27 +18,24 @@
     margin-bottom: 29px;
 }
 
-.best__offer-wrapper,
-.latest__offer-wrapper {
+.offer-wrapper {
 	position: relative;
     height: 260px;
     width: inherit;
     overflow: hidden;
 }
 
-.best__offer-item,
-.latest__offer-item  {
+.offer-item  {
 	width: 202px;
     display: inline-block;
     position: absolute;
 }
-.best__offer-item-img,
-.latest__offer-item-img {
+
+.offer-item-img {
 	position: relative;
 }
 
-.best__offer-item-img span,
-.latest__offer-item-img span {
+.offer-item-img span {
 	width: 4px;
     z-index: 100;
     position: absolute;
@@ -54,17 +48,12 @@
     top: 10.5%;
 }
 
-.latest__offer-item-img span {
-	top: 6%;
-}
-
-.best__offer-item-img span:hover,
-.latest__offer-item-img span:hover {
+.offer-item-img span:hover {
 	cursor: pointer;
+	transition: 1s;
 }
 
-.best__offer-description h3,
-.latest__offer-description  h3 {
+.offer-description  h3 {
 	font-weight: 400;
     display: -ms-flexbox;
     display: flex;
@@ -75,8 +64,7 @@
     letter-spacing: -0.5px;
 }
 
-.best__offer-description__check,
-.latest__offer-description__check   {
+.offer-description__check   {
 	display: inline-block;
 	background-image: url(../img/sprite.png);
   	background-position: -32px -62px;
@@ -85,8 +73,7 @@
   	margin-left: 31px;
 }
 
-.best__offer-group,
-.latest__offer-group {
+.offer-group {
 	color: #8c9ba5;
     font-size: 12px;
     & span {
@@ -94,14 +81,12 @@
     }
 }
 
-.best__offer-description,
-.latest__offer-description{
+.offer-description{
 	text-align: left;
 	padding-left: 2px;
 }
 
-.best__offer-description h4,
-.latest__offer-description h4 {
+.offer-description h4 {
 	font-size: 12px;
     line-height: .16;
     margin-top: 20px;
@@ -132,8 +117,7 @@
 	margin-right: 12px;
 }
 
-.best__offer-more,
-.latest__offer-more,
+.offer-more,
 .blog-more {
 	font-size: 16px;
 	line-height: 24px;
@@ -147,13 +131,17 @@
     margin-top: 7px;
     letter-spacing: -0.45px;
     text-align: center;
-	&:hover {
+	&:hover,
+	&:active,
+	&:focus {
 		border-color: $color-primary;
     	color: $color-primary;
+    	transition: 1s;
+    	outline: none;
 	}
 }
 
-.best__offer .overflow {
+.offer .overflow {
 	left: -24px;
     top: 32px;
 }
