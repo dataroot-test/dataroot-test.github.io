@@ -6,7 +6,7 @@ a {
 	max-width: 890px;
 	margin: 0 auto;
 
-	.wrapper {
+	.container {
 		background: $color-secondary;
 		margin: 20px auto;
 		@include flexbox();
