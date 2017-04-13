@@ -18,3 +18,9 @@ function PopUpHide(id){
     $(id).hide();
 }
 
+
+$(".hamburger").click(function() {
+  $(this).toggleClass("hamburger-open");
+  $('.wrapper').toggleClass("wrapper-blur");
+});
+
