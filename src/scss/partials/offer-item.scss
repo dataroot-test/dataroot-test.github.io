@@ -31,7 +31,7 @@
 	}
 }
 
-.offer__item-link-title {
+.offer__item-title {
 	font-weight: 500;
     font-size: 16px;
     word-spacing: 1px;
@@ -42,6 +42,7 @@
     font-weight: 400;
     font-size: 12px;
     margin-top: -1px;
+
     & h4 {
     	letter-spacing: -0.65px;
 	    margin-left: -2px;
@@ -51,7 +52,7 @@
     
 }
 
-.offer__item-description__metro {
+.offer__item-location {
 	font-size: 12px;
 	color: #000000;
 	font-weight: 400;
@@ -59,10 +60,12 @@
     margin-left: -2px;
     margin-bottom: 25px;
     letter-spacing: -0.25px;
+
 	& .offer__item-length {
 		color: #9B9B9B;
 		margin-left: 20px;
 	}
+
 	& .metro-station {
 		margin-right: 8px;
 	}
@@ -73,6 +76,7 @@
 .offer__item-detailed {
 	letter-spacing: -0.5px;
 	margin-bottom: 19px;
+
 	&__point {
 		margin: 0 7px;
 	}
@@ -98,6 +102,7 @@
 
 .offer__item-rate {
 	margin-top: 12px;
+
 	& span {
 		margin-right: 7px;
     	margin-left: 11px;
@@ -117,6 +122,7 @@
     box-sizing: border-box;
     letter-spacing: -0.25px;
     margin: 24px 12px 20px -1px;
+
     & p {
 		margin: 0;
 	}
@@ -141,16 +147,26 @@
 .offer__contact-phone {
 	background: url("../img/phone-icon.png") no-repeat center;
 	border: 2px solid rgba(48, 174, 98, 0.4);
-	&:hover {
+
+	&:hover,
+    &:active,
+    &:focus  {
 		border: 2px solid rgba(48, 174, 98, 0.8);
+		transition: 1s;
+		outline: none;
 	}
 }
 
 .offer__contact-messenger {
 	background: url("../img/messenger.png") no-repeat center;
 	border: 2px solid rgba(37, 115, 216, 0.4);
-	&:hover {
+
+	&:hover,
+    &:active,
+    &:focus {
 		border: 2px solid rgba(37, 115, 216, 0.8);
+		transition: 1s;
+		outline: none;
 	}
 }
 
@@ -194,6 +210,7 @@
     text-align: left;
     background: url(../img/icon-right.png) no-repeat 81% 24%;
     width: 136px;
+    
     & p {
     	font-size: 12px;
 	    line-height: 1.5;

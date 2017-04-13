@@ -57,8 +57,12 @@
         margin-left: -2.5px;
         margin-top: -2px;
 
-        &:hover {
+        &:hover,
+        &:active,
+        &:focus {
             color: $color-primary;
+            transition: 1s;
+            outline: none;
         }
     }
 }
@@ -102,8 +106,12 @@
     justify-content: flex-start;
     color: $font-color;       
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus  {
         color: $color-primary;
+        transition: 1s;
+        outline: none;
     }
 }
 
@@ -133,8 +141,12 @@
     border-radius: 2px;
     border: 2px solid transparent;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus  {
         background-color: #50DB88;
         border: 2px solid #50DB88;
+        transition: 1s;
+        outline: none;
     }
 }

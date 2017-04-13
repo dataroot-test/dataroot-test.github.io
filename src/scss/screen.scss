@@ -5,11 +5,11 @@
 		padding-right: 15px;
 	}
 
-	.header__nav-item {
+	.header__nav-link {
 		margin-right: 10.35%;
 	}
 
-	.header__search-form,
+	.search-form,
 	.header__bottom {
 		display: block;
 		text-align: center;
@@ -22,7 +22,7 @@
 	}
 
 	.search__form-select__room,
-	.header__search-form button {
+	.search-form a {
 		margin-left: 0;
 	}
 
@@ -54,7 +54,7 @@
 		margin-left: 2px;
 	}
 
-	.realty-near__img {
+	.realty__img {
 		width: 51%;
 		margin: 4.5% auto auto 3.7%;
 		& img {
@@ -106,36 +106,36 @@
 	   background-color: rgba(255, 255, 255, 0.95);
 	}
 
-.hamburger {
-   transition: all .25s;
-   position: absolute;
-  	top: 25px;
-   right: 3%;
-   height: 36px;
-   width: 36px;
-   z-index: 1;
-   cursor: pointer;
-   ul {
-      transition: all 0s;
-      position: fixed;
-      left: -9000px;
-   }
-}
+	.hamburger {
+	   	transition: all .25s;
+	   	position: absolute;
+	  	top: 25px;
+	   	right: 3%;
+	   	height: 36px;
+	   	width: 36px;
+	   	z-index: 1;
+	   	cursor: pointer;
+	   	ul {
+	      	transition: all 0s;
+	      	position: fixed;
+	     	left: -9000px;
+	   	}
+	}
 
-.hamburger-icon {
-   @extend .b-a;
-   position: absolute;
-   right: 12px;
-   top: 24px;
-   &:before {
-      @extend .b-a;
-      top: -8px;
-   }
-   &:after {
-      @extend .b-a;
-      top: 8px;
-   }
-}
+	.hamburger-icon {
+	   @extend .b-a;
+	   position: absolute;
+	   right: 12px;
+	   top: 24px;
+	   &:before {
+	      @extend .b-a;
+	      top: -8px;
+	   }
+	   &:after {
+	      @extend .b-a;
+	      top: 8px;
+	   }
+	}
 
 	.b-a-expanded {
 	   transition: all .25s;
@@ -194,7 +194,7 @@
 	   	}
 	}
 
-	a.header__button-new__ad {
+	a.button__new-ad {
 		padding: 11px 25px 11px 13px;
 	}
 
@@ -207,25 +207,25 @@
 		text-align: center;
 	}
 
-	.realty-near__img,
-	.realty-near__text {
+	.realty__img,
+	.realty__text {
 		width: 95%;
 		margin-right: 2.5%;
 		margin-left: 2.5%;
 		text-align: center;
 	}
 
-	.realty-near__title {
+	.realty__title {
 		margin-left: 0;
 	}
 
-	.realty-near__title,
+	.realty__title,
 	.select,
-	.realty-near__link {
+	.realty__button {
 		margin-left: 0
 	}
 
-	.realty-near__nav {
+	.realty__nav {
 		display: block;
 		text-align: center;
 		padding-left: 0;
@@ -234,7 +234,7 @@
 		}
 	}
 
-	.realty-near__link {
+	.realty__link {
 		margin-left: 0;
 	}
 
@@ -266,14 +266,14 @@
 		color: #979797;
 	    margin-left: 49.5%;
 
-		span {
-		display: none;
+		& span {
+			display: none;
 		}
 	}
 
 	.offer__item-content 
 	.offer__item-main 
-	.rooms-img {
+	.offer__item-img {
 		width: 45%;
 	    margin-top: 2%;
 
@@ -331,6 +331,7 @@
 		align-items: center;
     	flex-direction: column;
     	margin-bottom: 10px;
+
     	& .communicate__link {
     		margin-right: 0;
     		margin-left: 0;
@@ -362,7 +363,7 @@
 		margin-bottom: 9.7%;
 	}
 
-	.header__bottom, .header__search-form{
+	.header__bottom, .search-form {
 		text-align: left;
 	}
 
@@ -389,35 +390,35 @@
 		margin-left: 2px;
 	}
 
-	.realty-near .wrapper {
+	.realty .wrapper {
 		margin: 21px auto;
 	}
 
-	.realty-near__img img {
+	.realty__img img {
 		height: 214px;
 	}
 
-	.realty-near__title {
+	.realty__title {
 		padding-top: 1%;
 	}
 
-	.realty-near__nav {
+	.realty__nav {
 		padding-top: 2.5%;
 	}
 
-	.realty-near__nav li {
+	.realty__nav li {
 		padding-right: 9.5%;
 	}
 
-	.realty-near-link {
+	.realty__link {
 		padding-bottom: 11px;
 	}
 
-	.realty-near__link {
+	.realty__button {
 		margin: -1px 0 4% 0%;
 	}
 
-	.select-metro .select {
+	.select-location .select {
 		margin-bottom: 9%;
 	}
 
@@ -446,7 +447,7 @@
 		padding-right: 20px;
 	}
 
-	.realty-near__title,
+	.realty__title,
 	.best__offer h2, 
 	.blog h2, 
 	.latest__offer h2,
@@ -483,11 +484,11 @@
 		margin-bottom: 26px;
 	}
 
-	.communicate__slider .communicate__slider-ovals {
+	.communicate__slider .communicate__slider-pagination {
 		margin: 31px 0 19px 6px;
 	}
 
-	.communicate__slider-ovals .communicate__slider-point {
+	.communicate__slider-pagination .communicate__slider-point {
 		margin-right: 7px;
 	}
 
@@ -541,12 +542,12 @@
 		max-width: 360px;
 	}
 	
-	.main__breadcrumb-menu {
+	.breadcrumbs__menu {
 		display: none;
 	}
 
-	.main__breadcrumbs
-	.main__breadcrumb-back {
+	.breadcrumbs
+	.breadcrumbs__back {
 		display: block;
 	    margin-left: 5px;
     	margin-top: 16px;
@@ -584,7 +585,7 @@
 
 	.offer__item-content 
 	.offer__item-main 
-	.rooms-img {
+	.offer__item-img {
 		width: 100%;
 	}
 
@@ -665,6 +666,7 @@
 	.footer__logo {
 		display: flex;
 		justify-content: center;
+		
 		& .footer__logo-link {
 			margin: 47px 0 50px 0%;
 		}

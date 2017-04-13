@@ -1,6 +1,3 @@
-/*.communicate {
-	margin: 0 auto;
-}*/
 
 .communicate__content {
 	margin: auto;
@@ -58,6 +55,8 @@
 	    &:focus {
 	    	padding-bottom: 8px;
 			border-bottom: 2px solid $color-primary;
+			transition: 1s;
+			outline: none;
 		}		
 	}
 }
@@ -71,7 +70,7 @@
 		@include flexbox();	
 	}
 
-	.communicate__slider-ovals {
+	.communicate__slider-pagination {
 		@include flexbox();
 		margin: 38px 0px 38px 6px;
 	}
@@ -165,14 +164,18 @@ a.communicate__link {
 	border-radius: 2px;
 	border: 2px solid transparent;
 
-	&:hover {
+	&:hover,
+	&:active,
+	&:focus {
 		background: #50DB88;
 		border: 2px solid #50DB88;
 		color: $color-secondary;
+		transition: 1s;
+		outline: none;
 	}
 }
 
-.communicate__slider-ovals {
+.communicate__slider-pagination {
 	@include flexbox();
 	margin: 0;
 	justify-content: center;
@@ -195,6 +198,8 @@ a.communicate__link {
 			height: 12px;
 			background-color: $color-secondary;
 			border: 2px solid $color-primary;
+			transition: 1s;
+			outline: none;
 		}
 	}
 }

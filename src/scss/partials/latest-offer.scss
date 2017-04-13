@@ -3,8 +3,13 @@
 	border-bottom: 2px solid transparent;
 	padding: 8px 0;
     margin-right: 37px;
-    &:hover {
+    
+    &:hover,
+    &:active,
+    &:focus  {
     	border-bottom: 2px solid $color-primary;
+        transition: 1s;
+        outline: none;
     }
 }
 
@@ -25,4 +30,8 @@
 
 .latest__offer-description__check {
     margin-left: 16px;
+}
+
+.latest__offer-item-img span {
+    top: 6%;
 }

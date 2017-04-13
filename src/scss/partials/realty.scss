@@ -2,7 +2,7 @@ a {
 	text-decoration: none;
 }
 
-.realty-near {	
+.realty {	
 	max-width: 890px;
 	margin: 0 auto;
 
@@ -15,7 +15,7 @@ a {
 	}
 }
 
-.realty-near__nav {
+.realty__nav {
 	padding-left: 11.1%;
 	padding-top: 1.5%;
 	list-style-type: none;
@@ -23,17 +23,17 @@ a {
 	@include flexbox();
 }
 
-.realty-near__text {
+.realty__text {
 	width: 41%;
 	margin: 0;
 }
 
-.realty-near__nav li {
+.realty__nav li {
 	padding-right: 12%;
 	display: inline-block;
 }
 
-.realty-near__title {
+.realty__title {
 	font-weight: 500;
 	font-size: 24px;
 	padding-top: 6%;
@@ -41,7 +41,7 @@ a {
 	word-spacing: -2px;
 }
 
-.realty-near-link {
+.realty__link {
 	color: $font-color;
 	border-bottom: 2px solid transparent;
 	display: inline-flex;
@@ -53,6 +53,8 @@ a {
     &:focus {
     	padding-bottom: 8px;
 		border-bottom: 2px solid $color-primary;
+		transition: 1s;
+		outline: none;
 	}
 }
 
@@ -63,7 +65,7 @@ a {
 	width: 190px;
 }
 
-.realty-near__link {	
+.realty__button {	
 	display: inline-block;
 	margin: -1px 0 10% 10.5%;
     text-align: center;
@@ -74,34 +76,23 @@ a {
 	border-radius: 2px;
 	border: 2px solid transparent;
 
-	&:hover {
+	&:hover,
+    &:active,
+    &:focus  {
 		background: #50DB88;
 		border: 2px solid #50DB88;
 		color: $color-secondary;	
+		transition: 1s;
+		outline: none;
 	}
 }
 
-.realty-near__img {
+.realty__img {
 	margin: auto;
 	margin-top: 4.5%;
 	margin-left: 8.7%;
 }
 
-/*.select-metro {
-	border-radius: 2px;
-	.metro-station {
-	    display: inline-block;
-	    width: 8px;
-	    height: 8px;
-	    border-radius: 50%;
-	}
-
-	.metro-station-red {
-		background: #E71D32 ;
-	    margin-right: 10px;
-	}
-}*/
-
-.select-metro .jq-selectbox {
+.select-location .jq-selectbox {
 	min-width: 315px;
 }
