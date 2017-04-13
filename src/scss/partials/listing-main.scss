@@ -1,6 +1,7 @@
 .listing__header {
 	padding: 14px 0 8px;
 }
+
 .main__breadcrumb-menu {
 	list-style: none;
 	padding-left: 0;
@@ -21,6 +22,11 @@
     		}
 		}
 	}
+}
+
+.main__breadcrumbs
+.main__breadcrumb-back {
+	display: none;
 }
 
 .main h2 {
@@ -60,4 +66,9 @@
 	    	outline: none;
 	    }
 	}
+}
+
+.offer__item-content {
+	margin-bottom: 12px;
+	padding-top: 1px;
 }

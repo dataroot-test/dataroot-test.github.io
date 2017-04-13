@@ -33,6 +33,27 @@
 	    margin-top: 15px;
 	}
 
+	.main,
+	.offer__item-content {
+	    width: 768px;
+    	margin: auto;
+	}
+
+	.main {
+		margin-left: 8%;
+	}
+
+	.offer__item-content {
+		margin-bottom: 12px;
+		padding-top: 1px;
+	}
+
+	.offer__item-content 
+	.offer__item-main 
+	.offer__item-group {
+		margin-left: 2px;
+	}
+
 	.realty-near__img {
 		width: 51%;
 		margin: 4.5% auto auto 3.7%;
@@ -97,6 +118,62 @@
 
 	.communicate__slider-phone {
 		display: none;
+	}
+
+	.main,
+	.offer__item,
+	.offer__item-content {
+		max-width: 520px;		
+	}
+
+	.main {
+		margin: auto;
+	}
+
+	.offer__item-content 
+	.offer__item-main 
+	.offer__item-group {		
+		width: 52%;
+		text-align: left;
+		margin-left: 2px;
+	}
+
+	.offer__item-content 
+	.offer__item-main
+	.offer__item-rate {
+		color: #979797;
+	    margin-left: 49.5%;
+
+		span {
+		display: none;
+		}
+	}
+
+	.offer__item-content 
+	.offer__item-main 
+	.rooms-img {
+		width: 45%;
+	    margin-top: 2%;
+
+		& img {
+			width: 100%;
+		}
+	}
+
+	.offer__item-content 
+	.offer__item-main
+	.offer__item-price {
+		width: 100%;
+	}
+
+	.offer__item-cost {
+		display: flex;
+        margin-bottom: -3%;
+	}
+
+	.offer__price-rating__expensive,
+	.offer__price-rating__good {
+	    margin-bottom: -35px;
 	}
 
 	.footer .footer__content {
@@ -338,6 +415,89 @@
 	a.blog-more {
 		margin-left: 0;
 		margin-top: -2px;
+	}
+
+	.main,
+	.offer__item,
+	.offer__item-content {
+		max-width: 360px;
+	}
+	
+	.main__breadcrumb-menu {
+		display: none;
+	}
+
+	.main__breadcrumbs
+	.main__breadcrumb-back {
+		display: block;
+	    margin-left: 5px;
+    	margin-top: 16px;
+	}
+
+	.main h2 {
+		font-size: 16px;
+		margin-top: 12px;
+		margin-left: 7px;
+	}
+
+	.main__filters-search__result {
+	    margin-left: 0;
+	}
+
+	.container {
+		margin-left: 4%;
+	}
+
+	.main__filters {
+		display: block;
+		margin-bottom: 21px;
+	    margin-left: 6px;
+	    margin-top: 21px;
+	}
+
+	.offer__item-content {
+	    padding-bottom: 12px;
+    	margin-bottom: 12px;
+	
+		& .offer__item-main {
+			margin: 12px 17px 0;
+		}
+	}
+
+	.offer__item-content 
+	.offer__item-main 
+	.rooms-img {
+		width: 100%;
+	}
+
+	.offer__item-content 
+	.offer__item-main
+	.offer__item-rate {
+	    margin-left: 24.5%;
+	}
+
+	.offer__item-content 
+	.offer__item-main 
+	.offer__item-group {		
+		width: 100%;
+		margin-top: 22px;
+		margin-left: 4px;
+	}
+
+	.offer__item-content 
+	.offer__item-main 
+	.offer__item-price {
+		margin: 13px 0 22px 4px;
+
+		& .offer__item-cost {
+			margin-bottom: 8px;
+		    height: 26px;
+			align-items: baseline;
+		}
+	}
+ 	
+ 	.offer__item {
+		margin-bottom: -30px;
 	}
 
 	.footer-position {
