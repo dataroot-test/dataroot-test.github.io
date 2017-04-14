@@ -66,6 +66,10 @@
 		width: 157px;
 	}
 
+	.footer__content-contacts {
+		width: 21.5%;
+	}
+
 	.communicate__slider-bot {
 		margin-right: 1.5%;
 		& .communicate__link {
@@ -298,7 +302,7 @@
 	    margin-bottom: -35px;
 	}
 
-	.footer .footer__content {
+	.footer .container {
 		display: table;
 		text-align: center;
 	}
@@ -647,7 +651,7 @@
 		justify-content: center;
 	}
 
-	.footer .footer__content {
+	.footer .container {
 		padding: 63px 0 0;
 	}
 
