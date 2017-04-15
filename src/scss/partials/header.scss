@@ -22,6 +22,10 @@
 	@include flexbox();
 }
 
+.header__top {
+	margin-bottom: 63px;
+}
+
 .header__nav-link {
 	color: $color-secondary;
 	text-decoration: none;
@@ -110,8 +114,6 @@
 }
 
 .header__title {
-	margin-top: 7%;
-    margin-bottom: 4.7%;
     font-size: 30px;
     color: $color-secondary;
     font-weight: 400;
@@ -119,6 +121,7 @@
 
 .header__bottom {
 	display: inline-flex;
+	margin-top: 20px;
 }
 
 .search-form {
@@ -187,13 +190,16 @@ input[type=checkbox]:checked + label {
 	 color: #152935;
 }
 
+.search__form-button {
+ 	margin-bottom: 2px;
+    margin-left: 48px;
+}
+
 .search-form a {
 	background: #fff;
     color: #30ae63;
     padding: 13px 52px 13px 26px;
     line-height: 13px;
-    margin-bottom: 2px;
-    margin-left: 50px;
     display: block;
     
     &:hover,

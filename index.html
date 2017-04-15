@@ -13,7 +13,7 @@
 	<script src="dist/script/jquery.formstyler.js"></script>
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper__blur">
 		<header class="header">
 			<div class="container clearfix">
 				<div class="header__top">
@@ -22,7 +22,7 @@
 						<a class="header__nav-link" href="#">Аренда</a>
 						<a class="header__nav-link" href="#">Продажа</a>
 						<a class="header__nav-link" href="#">Посуточно</a>
-						<div class="header__nav-link overflow-link" href="#"><span></span><p>Еще</p>
+						<div class="header__nav-link overflow-link"><span></span><p>Еще</p>
 							<div class="overflow">
 								<ul class="overflow__menu">
 									<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -53,15 +53,15 @@
 					       	</div>
 					        <div class="search__form-select__room">
 					            <p>Кол-во комнат:</p>
-					            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="1" id="check-1" class="">
+					            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="1" id="check-1">
 					            <label for="check-1" class="select-room__label">1</label>
-					            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="2" id="check-2" class="">
+					            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="2" id="check-2">
 					            <label for="check-2" class="select-room__label">2</label>
-					            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="3" id="check-3" class="">
+					            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="3" id="check-3">
 					            <label for="check-3" class="select-room__label">3</label>
-					            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="1" id="check-4" class="">
+					            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="4" id="check-4">
 					            <label for="check-4" class="select-room__label">4</label>
-					            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="1" id="check-5+" class="">
+					            <input class="select__room-checkbox checkbox" type="checkbox" name="rooms" value="5+" id="check-5+">
 					            <label for="check-5+" class="select-room__label">5+</label>
 					        </div>
 					        <div class="search__form-button">
@@ -83,13 +83,13 @@
 						<li><a href="#" class="realty__link">Дома</a></li>
 						<li><a href="#" class="realty__link">Офисы</a></li>            
 					</ul>
-		            <div class="select-location">
+		            <div class="select__location">
 		            	<select name="Metro select" class="select">
-			            	<option selected="selected"><span class="metro-station metro-station-red"></span>Политехнический институт</option>
-			            	<option><span class="metro-station metro-station-red">Шулявская</option>
-			            	<option><span class="metro-station metro-station-blue">Контрактовая площадь</option>
-							<option><span class="metro-station metro-station-blue">Оболонь</option>
-							<option><span class="metro-station metro-station-green">Позняки</option>
+			            	<option selected="selected">Политехнический институт</option>
+			            	<option>Шулявская</option>
+			            	<option>Контрактовая площадь</option>
+							<option>Оболонь</option>
+							<option>Позняки</option>
 		            	</select>
 		            </div>
 		            <a href="#" class="realty__button button-primary">Показать результаты поиска</a>	
@@ -103,7 +103,7 @@
 				<div class="offer-wrapper"> 
 					<div class="offer-item" style="top: 0; left: 20px;">
 						<div class="offer-item-img">
-							<span class="overflow-link">
+							<div class="overflow-link">
 								<div class="overflow">
 									<ul class="overflow__menu">
 										<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -113,7 +113,7 @@
 										<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
 									</ul>
 								</div>
-							</span>
+							</div>
 							<img src="dist/img/best-offer.jpg" alt="best-offer-flat">
 						</div>
 						<div class="offer-description">
@@ -126,7 +126,7 @@
 					</div>
 					<div class="offer-item" style="top: 0; left: 234px;">
 						<div class="offer-item-img">
-							<span class="overflow-link">
+							<div class="overflow-link">
 								<div class="overflow">
 									<ul class="overflow__menu">
 										<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -136,7 +136,7 @@
 										<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
 									</ul>
 								</div>
-							</span>
+							</div>
 							<img src="dist/img/best-offer.jpg" alt="best-offer-flat">
 						</div>
 						<div class="offer-description">
@@ -149,7 +149,7 @@
 					</div>
 					<div class="offer-item" style="top: 0; left: 448px;">
 						<div class="offer-item-img">
-							<span class="overflow-link">
+							<div class="overflow-link">
 								<div class="overflow">
 									<ul class="overflow__menu">
 										<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -159,7 +159,7 @@
 										<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
 									</ul>
 								</div>
-							</span>
+							</div>
 							<img src="dist/img/best-offer.jpg" alt="best-offer-flat">
 						</div>
 						<div class="offer-description">
@@ -172,7 +172,7 @@
 					</div>
 					<div class="offer-item" style="top: 0; left: 662px;">
 						<div class="offer-item-img">
-							<span class="overflow-link">
+							<div class="overflow-link">
 								<div class="overflow">
 									<ul class="overflow__menu">
 										<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -182,7 +182,7 @@
 										<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
 									</ul>
 								</div>
-							</span>
+							</div>
 							<img src="dist/img/best-offer.jpg" alt="best-offer-flat">
 						</div>
 						<div class="offer-description">
@@ -209,7 +209,7 @@
 				<div class="latest__offer-wrapper offer-wrapper"> 
 					<div class="latest__offer-item offer-item" style="top: 0; left: 19px;">
 						<div class="latest__offer-item-img offer-item-img">
-								<span class="overflow-link">
+								<div class="overflow-link">
 									<div class="overflow">
 										<ul class="overflow__menu">
 											<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -219,7 +219,7 @@
 											<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
 										</ul>
 									</div>
-								</span>
+								</div>
 								<img src="dist/img/latest-offer-1.jpg" alt="latest-offer-flat">
 							</div>
 						
@@ -233,7 +233,7 @@
 					</div>
 					<div class="latest__offer-item offer-item" style="top: 0; left: 234px;">
 						<div class="latest__offer-item-img offer-item-img">
-								<span class="overflow-link">
+								<div class="overflow-link">
 									<div class="overflow">
 										<ul class="overflow__menu">
 											<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -243,7 +243,7 @@
 											<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
 										</ul>
 									</div>
-								</span>
+								</div>
 								<img src="dist/img/latest-offer-2.jpg" alt="latest-offer-flat">
 							</div>
 						<div class="latest__offer-description offer-description">
@@ -256,7 +256,7 @@
 					</div>
 					<div class="latest__offer-item offer-item" style="top: 0; left: 448px;">
 						<div class="latest__offer-item-img offer-item-img">
-								<span class="overflow-link">
+								<div class="overflow-link">
 									<div class="overflow">
 										<ul class="overflow__menu">
 											<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -266,7 +266,7 @@
 											<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
 										</ul>
 									</div>
-								</span>
+								</div>
 								<img src="dist/img/latest-offer-3.jpg" alt="latest-offer-flat">
 							</div>
 						<div class="latest__offer-description offer-description">
@@ -279,7 +279,7 @@
 					</div>
 					<div class="latest__offer-item offer-item" style="top: 0; left: 662px;">
 						<div class="latest__offer-item-img offer-item-img">
-								<span class="overflow-link">
+								<div class="overflow-link">
 									<div class="overflow">
 										<ul class="overflow__menu">
 											<li class="overflow__menu-item"><a href="#">Stop app</a></li>
@@ -289,7 +289,7 @@
 											<li class="overflow__menu-item overflow__menu-delete"><a href="#">Delete app</a></li>
 										</ul>
 									</div>
-								</span>
+								</div>
 								<img src="dist/img/best-offer.jpg" alt="latest-offer-flat">
 							</div>
 						<div class="latest__offer-description offer-description">
@@ -349,27 +349,29 @@
 			<div class="container">
 				<h2>Блог Metrovka</h2>
 	        	<p class="blog__subtitle">Хитрости, приемы, советы, фото и видео - все о том, как продать, купить, сдать в аренду или арендовать недвижимость.</p>
-			    <div class="blog__item">
-			        <img src="dist/img/blog-1.jpg" alt="communal payments">
-					<a class="blog__item-category category-lifehack" href="#">ЛАЙФХАК</a>
-			        <a class="blog__item-title" href="">Киевляне могут оплатить коммуналку через Facebook...</a>
-					<p class="blog__item-author">Татьяна Малыняк <span>&#8226;</span></p>
-					<p class="blog__item-time">5 мин чтения</p>
-			    </div>
-			    <div class="blog__item">
-			        <img src="dist/img/blog-2.jpg" alt="cheap apartments">
-					<a class="blog__item-category category-advice" href="#">СОВЕТ METROVKA</a>
-			        <a class="blog__item-title" href="">ТОП-5 самых дешевых квартир Киева</a>
-					<p class="blog__item-author">Татьяна Малыняк <span>&#8226;</span></p>
-					<p class="blog__item-time">4 мин чтения</p>
-			    </div>
-			    <div class="blog__item">
-			        <img src="dist/img/blog-3.jpg" alt="smart apartments">
-					<a class="blog__item-category category-technologies" href="#">ТЕХНОЛОГИИ</a>
-			        <a class="blog__item-title" href="">Смарт-квартиры: цены, предложения и законность</a>
-					<p class="blog__item-author">Татьяна Малыняк <span>&#8226;</span></p>
-					<p class="blog__item-time">2 мин чтения</p>
-			    </div>  
+	        	<div class="blog__wrapper">
+				    <div class="blog__item">
+				        <img src="dist/img/blog-1.jpg" alt="communal payments">
+						<a class="blog__item-category category-lifehack" href="#">ЛАЙФХАК</a>
+				        <a class="blog__item-title" href="">Киевляне могут оплатить коммуналку через Facebook...</a>
+						<p class="blog__item-author">Татьяна Малыняк <span>&#8226;</span></p>
+						<p class="blog__item-time">5 мин чтения</p>
+				    </div>
+				    <div class="blog__item">
+				        <img src="dist/img/blog-2.jpg" alt="cheap apartments">
+						<a class="blog__item-category category-advice" href="#">СОВЕТ METROVKA</a>
+				        <a class="blog__item-title" href="">ТОП-5 самых дешевых квартир Киева</a>
+						<p class="blog__item-author">Татьяна Малыняк <span>&#8226;</span></p>
+						<p class="blog__item-time">4 мин чтения</p>
+				    </div>
+				    <div class="blog__item">
+				        <img src="dist/img/blog-3.jpg" alt="smart apartments">
+						<a class="blog__item-category category-technologies" href="#">ТЕХНОЛОГИИ</a>
+				        <a class="blog__item-title" href="">Смарт-квартиры: цены, предложения и законность</a>
+						<p class="blog__item-author">Татьяна Малыняк <span>&#8226;</span></p>
+						<p class="blog__item-time">2 мин чтения</p>
+				    </div>  
+				</div>
 				<a href="#" class="blog-more">Перейти на страницу блога</a>
 			</div>
 	    </section>
@@ -378,7 +380,7 @@
 			<div class="container">
 				<div class="footer-position">
 					<h3 class="footer__item-title">Metrovka</h3>
-					<div>	
+					<div class="">	
 						<ul class="footer__nav">
 	                        <li class="footer__nav__item">
 	                            <a href="#" class="footer__nav-link">О компании</a>
@@ -458,9 +460,9 @@
 	                        </li>
 	                        <li class="footer__nav__item footer__nav__mail">
 	                            <a class="footer__nav-link" href="mailto:info@metrovka.ua">info@metrovka.ua</a>
-	                        </li>
-							<a href="#" class="footer__link button-primary"   onclick="PopUpShow(applyRequest)">Оставить заявку</a>
+	                        </li>						
 	                	</ul>
+	                	<a href="#" class="footer__button button-primary" onclick="PopUpShow(applyRequest)">Оставить заявку</a>
 					</div>
 	            </div>			
 			</div>
@@ -484,7 +486,7 @@
 			<div class="app-right app-position">
 				<div class="application__top">
 					<div class="application__close">
-						<div href="#" onclick="PopUpHide(applyRequest)" class=""><i class="fa fa-times link-cls" aria-hidden="true"></i></div>
+						<div onclick="PopUpHide(applyRequest)" class=""><i class="fa fa-times link-cls" aria-hidden="true"></i></div>
 					</div>
 					<nav class="application__nav">
 						<a class="application__nav-item" href="#">Район</a>
@@ -503,15 +505,15 @@
 				       	</div>
 				        <div class="district__form-select__room">
 				            <p>Кол-во комнат:</p>
-				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="1" id="check-room-1" class="">
+				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="1" id="check-room-1">
 				            <label for="check-room-1" class="select-room__label">1</label>
-				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="2" id="check-room-2" class="">
+				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="2" id="check-room-2">
 				            <label for="check-room-2" class="select-room__label">2</label>
-				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="3" id="check-room-3" class="">
+				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="3" id="check-room-3">
 				            <label for="check-room-3" class="select-room__label">3</label>
-				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="1" id="check-room-4" class="">
+				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="4" id="check-room-4">
 				            <label for="check-room-4" class="select-room__label">4</label>
-				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="1" id="check-room-5+" class="">
+				            <input class="district__select-room dcheckbox" type="checkbox" name="rooms" value="5+" id="check-room-5+">
 				            <label for="check-room-5+" class="select-room__label">5+</label>
 				        </div>
 				        <div class="input__data">

@@ -4,7 +4,7 @@
     .container {
         @include flexbox();
         margin: 0 auto;
-        padding: 48px 0 0 0;
+        padding-top: 50px;
     }
     
     .footer__logo-link {
@@ -16,7 +16,7 @@
     font-size: 16px;
     font-weight: 500;
     color: $font-color;
-    margin: 0 0 20px -2px;
+    margin: 0;
 }
 
 .footer__nav {
@@ -27,7 +27,6 @@
         line-height: 20px;
         margin-bottom: 20px;
         letter-spacing: -0.25px;
-       
     }
 
     .footer__nav-link,
@@ -48,13 +47,13 @@
 
     .footer__nav-link {
         @include flexbox();
-        word-spacing: 0.5px;
-        letter-spacing: -0.31px;
-        margin-right: 10%;
+        display: flex;
+        word-spacing: .5px;
+        letter-spacing: -.31px;
         line-height: 20px;
         padding-bottom: 18px;
-        margin-left: -2.5px;
         margin-top: -2px;
+        width: 168px;
 
         &:hover,
         &:active,
@@ -66,14 +65,16 @@
     }
 }
 
-.footer-position{    
+.footer__content-contacts .footer__nav__item ul {
+    padding-top: 0;
+}
+
+.footer-position {    
     display: inline-block;
-    padding-top: 8px;
-    padding-bottom: 38px;
-    margin-top: -4px;
     letter-spacing: -.25px;
     width: 21%;
-    padding-left: 2.9%;
+    padding-left: 2.8%;
+    padding-top: 0px;
     
     .footer__nav__item {
         margin-left: 0;
@@ -82,6 +83,7 @@
     ul {
         padding-left: 0px;
         width: 171px;
+        padding-top: 21px;
     }
 }
 
@@ -119,19 +121,16 @@
 }
 
 .footer__logo-link{
-    @include flexbox();
-    margin: auto;
-    justify-content: flex-start;
+    display: inline-block;
     background-image: url(../img/sprite.png);
     background-position: -62px 0px;
     width: 51px;
     height: 47px;
-    margin: -7px 0 4% 47.9%;
 }
 
-.footer__link {
+.footer__button {
     padding: 10px 25px 8px 29px;
-    margin-top: -1px;
+    margin-top: 1px;
     margin-left: -2.3px;
     display: inline-block;
     font-size: 14px;
@@ -148,4 +147,14 @@
         transition: 1s;
         outline: none;
     }
+}
+
+.footer__logo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.footer__content-contacts {
+    padding-left: 4%;
 }

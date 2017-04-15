@@ -3,10 +3,14 @@
 }
 
 .blog__item {
-	width: 31.5%;
+	width: 31.56%;
 	display: inline-block;
 	position: relative;
 	text-align: left;
+
+	& img {
+		margin-bottom: 18px;
+	}
 }
 
 .blog-item:first-child {
@@ -14,17 +18,16 @@
 }
 
 .blog h2 {
-	margin-bottom: 25px;
 	letter-spacing: -0.8px;
+	word-spacing: 2.5px;
 }
 
 .blog__subtitle {
 	max-width: 446px;
-    margin: 0 auto;
-    margin-top: 0px;
     letter-spacing: -0.2px;
     line-height: 20px;
-    margin: 0 auto 20px;
+    margin: 0 auto;
+    margin-top: 24px;
 }
 
 .blog a {
@@ -32,11 +35,14 @@
 	text-align: left;
 }
 
+.blog__wrapper {
+	margin-top: 21px;
+}
+
 .blog__item-category {
 	font-size: 11px;
     text-decoration: none;
     font-weight: normal;
-    margin: 17px 3px 0;
 }
 
 .blog__item-title {
