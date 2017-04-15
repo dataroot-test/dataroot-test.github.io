@@ -11,33 +11,31 @@ a {
 		margin: 20px auto;
 		@include flexbox();
 		flex-flow: row-reverse wrap;
-    	padding-bottom: 3px;
+    	padding: 24px 35px 41px;
 	}
 }
 
 .realty__nav {
-	padding-left: 11.1%;
-	padding-top: 1.5%;
 	list-style-type: none;
 	margin: 0;
 	@include flexbox();
+	margin-top: 23px;
+	padding-left: 2px;
 }
 
 .realty__text {
-	width: 41%;
+	width: 49.5%;
 	margin: 0;
 }
 
 .realty__nav li {
-	padding-right: 12%;
+	padding-right: 40px;
 	display: inline-block;
 }
 
 .realty__title {
 	font-weight: 500;
 	font-size: 24px;
-	padding-top: 6%;
-	margin-left: 10%;
 	word-spacing: -2px;
 }
 
@@ -59,15 +57,12 @@ a {
 }
 
 .select {
-	margin-top: 5.5%;
-	margin-bottom: 8.3%;
-	margin-left: 10%;
 	width: 190px;
 }
 
 .realty__button {	
 	display: inline-block;
-	margin: -1px 0 10% 10.5%;
+	margin-top: 29px;
     text-align: center;
 	font-size: 14px;
 	word-spacing: 1px;
@@ -88,11 +83,20 @@ a {
 }
 
 .realty__img {
-	margin: auto;
-	margin-top: 4.5%;
-	margin-left: 8.7%;
+	@include flexbox();
+	align-items: center;
+
+	& img {
+		@include flexbox();
+	}
 }
 
-.select-location .jq-selectbox {
-	min-width: 315px;
+.select__location {
+	margin-top: 21px;
+    margin-left: 2px;
+    display: inline-block;
+
+    & .jq-selectbox  {
+    	min-width: 315px;
+    }
 }

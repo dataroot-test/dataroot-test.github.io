@@ -17,6 +17,7 @@ a {
 	@include flexbox();	
 	max-width: 800px;
 	margin: 0 auto;
+	position: relative;
 }
 
 .app-left {
@@ -40,6 +41,7 @@ a {
 
 .app-right {
 	background-color: $color-secondary;
+	padding-top: 39px;
 }
 
 .application__nav {
@@ -168,6 +170,12 @@ input[type=checkbox]:checked.dcheckbox  + label {
         transition: 1s;
         outline: none;
     }
+}
+
+.application__close {
+	position: absolute;
+    top: 0;
+    right: 15px;
 }
 
 .application__close div:hover {

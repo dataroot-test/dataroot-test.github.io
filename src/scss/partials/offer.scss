@@ -1,0 +1,150 @@
+.offer,
+.blog {
+	margin-top: 20px;
+}
+.offer .container,
+.blog .container {
+	background: $color-secondary;
+	text-align: center;
+	padding: 1px 0px 0 0px;
+}
+
+.offer  h2,
+.blog h2 {
+	text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.15px;
+    word-spacing: -1.5px;
+}
+
+.offer-wrapper {
+	position: relative;
+    height: 260px;
+    overflow: overlay;
+    margin-top: 29px;
+}
+
+.offer-item  {
+	width: 202px;
+    display: inline-block;
+    position: absolute;
+}
+
+.offer-item-img {
+	position: relative;
+}
+
+.offer-item-img .overflow-link {
+	width: 4px;
+    z-index: 100;
+    position: absolute;
+    content: "";
+    display: block;
+    height: 22px;
+    background-image: url(../img/sprite.png);
+	background-position: 0px -93px;
+	right: 7.5%;
+    top: 10.5%;
+}
+
+.offer-item-img .overflow-link:hover {
+	cursor: pointer;
+	transition: 1s;
+}
+
+.offer-description  h3 {
+	font-weight: 400;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.offer-description__check   {
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+  	background-position: -32px -62px;
+  	width: 16px;
+  	height: 16px;
+  	margin-left: 31px;
+}
+
+.offer-group {
+	color: #8c9ba5;
+    font-size: 12px;
+    margin-top: 10px;
+    
+    & span {
+    	margin-right: 5px;
+    }
+}
+
+.offer-description {
+	text-align: left;
+	padding-left: 2px;
+	margin-top: 18px;
+}
+
+.offer-description h4 {
+	font-size: 12px;
+    line-height: .16;
+    margin-top: 20px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+}
+
+.metro-station {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin-top: -2px;
+}
+
+.metro-station-red {
+	background: #E71D32;
+	margin-right: 12px;
+}
+
+.metro-station-blue {
+	background: #2573d8;
+	margin-right: 12px;
+}
+
+.metro-station-green {
+	background: #30ad64;
+	margin-right: 12px;
+}
+
+.offer-more,
+.blog-more {
+	font-size: 16px;
+	line-height: 24px;
+	width: 100%;
+	border-bottom: 2px solid #D8D8D8;
+	border-top: 2px solid #D8D8D8;
+	text-align: center;
+	display: block;
+	color: $font-color;
+	padding: 5px 0 6px;
+    margin-top: 8px;
+    letter-spacing: -0.45px;
+    text-align: center;
+
+	&:hover,
+	&:active,
+	&:focus {
+		border-color: $color-primary;
+    	color: $color-primary;
+    	transition: 1s;
+    	outline: none;
+	}
+}
+
+.offer .overflow {
+	left: -24px;
+    top: 32px;
+}

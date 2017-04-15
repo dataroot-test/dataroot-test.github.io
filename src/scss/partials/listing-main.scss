@@ -1,11 +1,18 @@
 .listing__header {
-	padding: 14px 0 8px;
+	padding: 14px 0 9px;
+
+	& .header__top {
+		margin-bottom: 0;
+	}
+}
+
+.breadcrumbs {
+	padding-top: 6px;
 }
 
 .breadcrumbs__menu {
 	list-style: none;
 	padding-left: 0;
-	padding-top: 6px;
 
 	& li {
 		display: inline-block;
@@ -40,17 +47,16 @@
 .main h2 {
 	font-size: 20px;
 	line-height: 32px;
-	margin-top: 14px;
     letter-spacing: -.35px;
     color: #152935;
     margin-left: -2px;
     font-weight: 400;
-    margin-bottom: 6px;
+	margin: 0;
 }
 
 .main__filters {
 	@include flexbox();
-	margin-bottom: 8px;
+	margin-top: 5px;
 }
 
 .main__filters-search__result {
@@ -79,27 +85,6 @@
 		}
 	}
 }
-
-.offer__item-content {
-	margin-bottom: 12px;
-	padding-top: 1px;
-}
-
-.offer__item-title {
-	color: #2C74C7;
-	font-weight: 500;
-    font-size: 16px;
-    word-spacing: 1px;
-    letter-spacing: -.65px;
-	&:hover,
-	&:active,
-	&:focus  {
-		outline: none;
-		transition: 1s;
-		color: #0a407e;
-	}
-}
-
 
 .footer__content-contacts
 .footer__nav {

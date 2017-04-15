@@ -18,12 +18,13 @@
 }
 
 .latest__offer-check {
+    margin-top: 28px;
 	margin-bottom: 36px;
     text-align: center;
 }
 
 .latest__offer-more {
-	margin-top: 16px;
+	margin-top: 17px;
     letter-spacing: -0.2px;
     padding-bottom: 8px;
 }
@@ -32,6 +33,10 @@
     margin-left: 16px;
 }
 
-.latest__offer-item-img span {
+.latest__offer-item-img .overflow-link {
     top: 6%;
+}
+
+.latest__offer-wrapper {
+     margin-top: 36px;
 }
