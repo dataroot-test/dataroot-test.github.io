@@ -42,25 +42,27 @@
 	@include flexbox();		
 	justify-content: space-between;
 	min-width: 70%;
+	padding-left: 0;
 
-	.communicate__nav-link {
+	& li {
+		list-style: none;
+		display: inline-block;
+	}
+
+	.communicate__nav-radio {
 		color: $font-color;	
-		padding-bottom: 8px;
 		display: inline-flex;
 		font-size: 14px;
 		margin-left: -2px;
 		margin-right: 8px;
 		word-spacing: 1.8px;
 		letter-spacing: -0.4px;
-		border-bottom: 2px solid transparent;
 
 		&:hover,
 	    &:active,
 	    &:focus {
-	    	padding-bottom: 8px;
-			border-bottom: 2px solid $color-primary;
-			transition: 1s;
 			outline: none;
+			cursor: pointer;
 		}		
 	}
 }
@@ -73,7 +75,7 @@
 
 	.communicate__slider-wrapper {
 		@include flexbox();	
-		padding-top: 42px;
+		padding-top: 30px;
 	}
 
 	.communicate__slider-pagination {
