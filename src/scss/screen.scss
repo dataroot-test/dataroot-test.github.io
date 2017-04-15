@@ -442,6 +442,10 @@
 		box-sizing: border-box;
 	}
 
+	.header__top {
+		margin-bottom: 52px;
+	}
+
 	.hamburger {
 		top: 0px;
 	}
@@ -491,7 +495,7 @@
 
 	.search__form-button {
 		text-align: left;
-		margin-top: 29px;
+		margin-top: 31px;
 	}
 
 	.realty .container {
@@ -507,7 +511,7 @@
 	}
 
 	.realty__text {
-		margin-top: 6px;
+		margin-top: 4px;
     	margin-right: 6px;
 	}
 
@@ -531,8 +535,8 @@
 	}
 
 	.select__location {
-	    margin-top: 18px;
-	    margin-left: 3px;
+	    margin-top: 32px;
+    	margin-left: 5px;
 	}
 
 	.offer .container {
@@ -562,7 +566,7 @@
     	margin-left: 15px;
 	}
 
-	.communicate__nav-link:first-child {
+	.communicate__nav-radio:first-child {
 		margin-right: 28px;
 	}
 
@@ -583,8 +587,9 @@
 	}
 
 	.communicate__slider-bot {
-		margin-top: 34px;
-		margin-right: 0;
+		margin-top: 30px;
+	    margin-right: 0;
+	    padding-top: 27px;
 	}
 
 	.communicate__slider-bot {

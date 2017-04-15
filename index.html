@@ -79,9 +79,18 @@
 				<div class="realty__text">
 					<h2 class="realty__title">Недвижимость возле метро</h2>
 					<ul class="realty__nav">
-						<li><a href="#" class="realty__link">Квартиры</a></li>
-						<li><a href="#" class="realty__link">Дома</a></li>
-						<li><a href="#" class="realty__link">Офисы</a></li>            
+						<li>
+							<input type="radio" value="Flats" name="radio" class="radio-nav" id="realty__nav1">
+							<label for="realty__nav1">Квартиры</label>
+						</li>
+						<li>
+							<input type="radio" value="Houses" name="radio" class="radio-nav" id="realty__nav2">
+							<label for="realty__nav2">Дома</label>
+						</li>
+						<li>
+							<input type="radio" value="Offices" name="radio" class="radio-nav" id="realty__nav3">
+							<label for="realty__nav3">Офисы</label>
+						</li>             
 					</ul>
 		            <div class="select__location">
 		            	<select name="Metro select" class="select">
@@ -201,11 +210,20 @@
 		<section class="latest__offer offer">
 			<div class="container">
 				<h2>Последние обьявления в Киеве</h2>
-				<div class="latest__offer-check">
-					<a href="#">Квартиры</a>
-					<a href="#">Дома</a>
-					<a href="#">Офисы</a>
-				</div>
+				<ul class="latest__offer-check">
+					<li>
+						<input type="radio" value="Flats" name="radio-latest" class="radio-nav" id="latest__nav1">
+						<label for="latest__nav1">Квартиры</label>
+					</li>
+					<li>
+						<input type="radio" value="Houses" name="radio-latest" class="radio-nav" id="latest__nav2">
+						<label for="latest__nav2">Дома</label>
+					</li>
+					<li>
+						<input type="radio" value="Offices" name="radio-latest" class="radio-nav" id="latest__nav3">
+						<label for="latest__nav3">Офисы</label>
+					</li>       
+				</ul>
 				<div class="latest__offer-wrapper offer-wrapper"> 
 					<div class="latest__offer-item offer-item" style="top: 0; left: 19px;">
 						<div class="latest__offer-item-img offer-item-img">
@@ -309,10 +327,18 @@
 				<div class="communicate__text">
 					<h2 class="communicate__title">Общайтесь в Telegram</h2>
 					<p>Не отвлекайтесь больше на формальности. Получайте моментальные уведомления о новых обьявлениях, общайтесь без ограничений.</p>
-					<div class="communicate__nav">
-						<a href="#" class="communicate__nav-link">Поиск недвижимости</a>
-						<a href="#" class="communicate__nav-link">Общение с клиентами</a>
-					</div>				
+					<ul class="communicate__nav">
+						<li>
+							<input type="radio" value="search" name="radio-communicate" class="radio-nav" id="communicate__nav1">
+							<label for="communicate__nav1" class="communicate__nav-radio">Поиск недвижимости</label>
+						</li>
+						<li>
+							<input type="radio" value="сommunication" name="radio-communicate" class="radio-nav" id="communicate__nav2">
+							<label for="communicate__nav2" class="communicate__nav-radio">Общение с клиентами</label>
+						</li>						
+					</ul>
+						<a href="#" class="communicate__nav-link"></a>
+						<a href="#" class="communicate__nav-link"></a>				
 				</div>
 				<div class="communicate__slider">
 					<div class="communicate__slider-wrapper">
