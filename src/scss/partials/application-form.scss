@@ -9,10 +9,6 @@
     z-index: 2000000;
 }
 
-a {
-	text-decoration: none;
-}
-
 .container-app {
 	@include flexbox();	
 	max-width: 800px;

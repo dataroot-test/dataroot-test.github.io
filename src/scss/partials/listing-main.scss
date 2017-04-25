@@ -18,13 +18,12 @@
 		display: inline-block;
 
 		& span {
-    		padding: 0 7px 0 6px;
+    		padding: 0 3px 0 6px;
     	}
 
 		& a {
 			color: #2573d8;
     		text-decoration: none;
-    		margin-left: -2px;
     		letter-spacing: -0.25px;
 
     		&:hover,
@@ -49,7 +48,6 @@
 	line-height: 32px;
     letter-spacing: -.35px;
     color: #152935;
-    margin-left: -2px;
     font-weight: 400;
 	margin: 0;
 }
@@ -61,7 +59,6 @@
 
 .main__filters-search__result {
 	color: #8C9BA5;
-	margin-left: -2px;
     letter-spacing: -0.35px;
    	@include flexbox();
 }

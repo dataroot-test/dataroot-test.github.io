@@ -1,7 +1,6 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "buttons.scss";
-@import "dropdown.scss";
 @import "overflow.scss";
 @import "radio-nav.scss";
 @import "partials/header.scss";
@@ -15,11 +14,4 @@
 @import "partials/offer-item.scss";
 @import "partials/listing-main.scss";
 @import "screen.scss";
-body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: $font-size-base;
-	color: $font-color;
-	background: rgba(90, 104, 114, 0.08);
-}
-
-
+@import "common.scss";
