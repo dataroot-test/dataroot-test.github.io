@@ -12,3 +12,30 @@
   display: -webkit-flex;
   display: flex;
 }
+
+@mixin breakpoint($point) {
+  
+  @if $point == desktop {
+    @media (min-width: 1280px) { @content; }
+  }
+
+  @else if $point == ex-desktop {
+    @media (max-width: 1279px) { @content; }
+  }
+
+  @else if $point == tablet {
+    @media (max-width: 890px)  { @content; }
+  }
+
+  @else if $point == mobile {
+    @media (max-width: 767px)  { @content; }
+  }
+
+  @else if $point == ex-mobile {
+    @media (max-width: 520px)  { @content; }
+  }
+}
+
+@mixin media ($point) {
+  @media (max-width: $point)  { @content; }
+}

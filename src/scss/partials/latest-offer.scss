@@ -28,6 +28,10 @@
 	margin-top: 17px;
     letter-spacing: -0.2px;
     padding-bottom: 8px;
+
+    @include breakpoint(ex-mobile) {
+        margin-top: 8px;
+    }
 }
 
 .latest__offer-description__check {

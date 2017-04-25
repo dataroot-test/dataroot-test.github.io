@@ -3,7 +3,6 @@
 }
 .overflow__menu-item {
 	list-style: none;
-	padding: 7.5px 16px;
 	width: 170px;
 	&:hover,
 	&:active,
@@ -18,6 +17,9 @@
 	}
 	& a {
 		color: $font-color;
+		display: block;
+		padding: 7.5px 16px;
+		box-sizing: border-box;
 	}
 }
 
@@ -49,24 +51,24 @@
 
 .overflow:before {
 		content: " ";
-    	border-style: solid;
-    	content: " ";
-    	position: absolute;
-    	border-style: solid;
-    	display: block;
-    	border-width: 0 8px 8px;
-    	border-color: transparent transparent #fff;
-    	top: -7px;
-    	left: 18px;
+		border-style: solid;
+		content: " ";
+		position: absolute;
+		border-style: solid;
+		display: block;
+		border-width: 0 8px 8px;
+		border-color: transparent transparent #fff;
+		top: -7px;
+		left: 18px;
 }
 
 .overflow {
 	position: absolute;
 	display: none;
-    left: -11px;
-    z-index: 10;
-    top: 27px;
-    text-align: left;
+	left: -11px;
+	z-index: 10;
+	top: 27px;
+	text-align: left;
 }
 
 .overflow-link:hover  .overflow,
