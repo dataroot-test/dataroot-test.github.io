@@ -65,11 +65,11 @@
     }
 }
 
-.footer__content-contacts .footer__nav__item ul {
+.footer__content-contacts .footer__nav__item div {
     padding-top: 0;
 }
 
-.footer-position {    
+.footer-column {    
     display: inline-block;
     letter-spacing: -.25px;
     width: 21%;
@@ -80,7 +80,8 @@
         margin-left: 0;
     }
 
-    ul {
+    ul,
+    div {
         padding-left: 0px;
         width: 171px;
         padding-top: 21px;

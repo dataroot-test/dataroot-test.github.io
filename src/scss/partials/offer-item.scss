@@ -25,7 +25,6 @@
 
 .offer__item-content {
 	background: $color-secondary;
-	margin-left: -2px;
 
 	.offer__item-main {
 		@include flexbox();
@@ -38,8 +37,7 @@
 
 		.offer__item-group {
 			width: 320px;
-   			margin: 6px 0 0 0;
-    		margin-left: 23px;
+   			margin: 5px 0 0 23px;
 		}
 
 		.offer__item-price {
@@ -70,11 +68,9 @@
 .offer__item-description {
     font-weight: 400;
     font-size: 12px;
-    margin-top: -1px;
 
     & h4 {
     	letter-spacing: -0.65px;
-	    margin-left: -2px;
 	    margin-bottom: 10px;
 	    font-weight: 400;
     }
@@ -113,7 +109,6 @@
 	font-size: 13px;
 	line-height: 20px;
 	letter-spacing: -0.25px;
-	margin-left: -2px;
 	color: #000;
 }
 
@@ -127,7 +122,6 @@
 
 .offer__item-rate {
 	margin-top: 10px;
-    margin-right: -8px;
 
 	& span {
 		margin-right: 7px;
@@ -183,12 +177,19 @@
 	background: url("../img/phone-icon.png") no-repeat center;
 	border: 2px solid rgba(48, 174, 98, 0.4);
 
-	&:hover,
-    &:active,
+	&:active,
     &:focus  {
 		border: 2px solid rgba(48, 174, 98, 0.8);
 		transition: 1s;
 		outline: none;
+	}
+
+	&:hover {
+		border: 2px solid rgba(48, 174, 98, 0.8);
+		background-color: rgba(48, 174, 98, 0.4);
+		transition: 1s;
+		outline: none;
+		filter: invert(-100%);
 	}
 }
 
@@ -196,15 +197,21 @@
 	background: url("../img/messenger.png") no-repeat center;
 	border: 2px solid rgba(37, 115, 216, 0.4);
 
-	&:hover,
     &:active,
     &:focus {
 		border: 2px solid rgba(37, 115, 216, 0.8);
 		transition: 1s;
 		outline: none;
 	}
-}
 
+	&:hover {
+		border: 2px solid rgba(37, 115, 216, 0.8);
+		background-color: rgba(37, 115, 216, 0.4);
+		transition: 1s;
+		outline: none;
+		filter: invert(-100%);
+	}
+}
 
 .offer__item-footer {
 	position: relative;

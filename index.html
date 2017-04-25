@@ -404,7 +404,7 @@
 
 	    <footer class="footer">
 			<div class="container">
-				<div class="footer-position">
+				<div class="footer-column">
 					<h3 class="footer__item-title">Metrovka</h3>
 					<div class="">	
 						<ul class="footer__nav">
@@ -426,7 +426,7 @@
 	                    </ul>
 					</div>
 				</div>
-				<div class="footer-position">
+				<div class="footer-column">
 					<h3 class="footer__item-title">Партнерство</h3>
 					<div>
 						<ul class="footer__nav">
@@ -442,7 +442,7 @@
 	                    </ul>
 					</div>
 				</div>
-				<div class="footer-position">
+				<div class="footer-column">
 					<h3 class="footer__item-title">Узнайте больше</h3>
 					<div>
 						<ul class="footer__nav">
@@ -461,22 +461,16 @@
 	                    </ul>
 					</div>
 				</div>
-				<div class="footer__content-contacts footer-position">
+				<div class="footer__content-contacts footer-column">
 					<h3 class="footer__item-title">Контакты</h3>					
 					<div>
 						<ul class="footer__nav">
 							<li class="footer__nav__item">
-								<ul class=social-icons>
-		                            <li class=footer__social-link>
-		                                <a href="#"><i class="fa fa-facebook-official contact-icon" aria-hidden="true"></i></a>
-		                            </li>
-		                            <li class=footer__social-link>
-		                                <a href="#"><i class="fa fa-vk contact-icon" aria-hidden="true"></i></a>
-		                            </li>
-		                            <li class=footer__social-link>
-		                                <a href="#"><i class="fa fa-instagram contact-icon" aria-hidden="true"></i></a>
-		                            </li>
-	                        	</ul>
+								<div class=social-icons>
+	                                <a href="#" class=footer__social-link><i class="fa fa-facebook-official contact-icon" aria-hidden="true"></i></a>
+	                                <a href="#" class=footer__social-link><i class="fa fa-vk contact-icon" aria-hidden="true"></i></a>
+	                                <a href="#" class=footer__social-link><i class="fa fa-instagram contact-icon" aria-hidden="true"></i></a>
+	                        	</div>
 							</li>                        
 	                        <li class="footer__nav__item">
 	                            <div class="footer__nav__item-address">
@@ -514,10 +508,10 @@
 					<div class="application__close">
 						<div onclick="PopUpHide(applyRequest)" class=""><i class="fa fa-times link-cls" aria-hidden="true"></i></div>
 					</div>
-					<nav class="application__nav">
+					<div class="application__nav">
 						<a class="application__nav-item" href="#">Район</a>
 						<a class="application__nav-item" href="#">Метро</a>
-					</nav>
+					</div>
 				</div>
 				<div class="application__form">
 					<form class="application__submit-form">
@@ -556,19 +550,19 @@
 	</section>
 
 	<div class="hamburger">
-	   <div class="hamburger-icon"></div>
-	   <nav>
-	      <ul>
-	         <li><a href="#" class="header__nav-link">Продажа</a></li>
-	         <li><a href="#" class="header__nav-link">Посуточно</a></li>
-	         <li><a href="#" class="header__nav-link">Блог</a></li>
-	         <li><a href="#" class="header__nav-link">Контакты</a></li>
-	         <li><a href="#" class="header__nav-link">Новый поиск</a></li>
-	         <li><a class="button__new-ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a></li>
-	        <li><a class="button-log"  href="#">Войти</a></li>
-					
-	      </ul>
-	   </nav>
+		<div class="hamburger-icon"></div>
+		<div>			
+			<ul>
+				<li><a href="#" class="logo hamburger-logo"></a></li>
+				<li><a href="#" class="header__nav-link">Продажа</a></li>
+				<li><a href="#" class="header__nav-link">Посуточно</a></li>
+				<li><a href="#" class="header__nav-link">Блог</a></li>
+				<li><a href="#" class="header__nav-link">Контакты</a></li>
+				<li><a href="#" class="header__nav-link">Новый поиск</a></li>
+				<li><a class="button__new-ad"  href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i><span>Разместить объявление</span></a></li>
+				<li><a class="button-log"  href="#">Войти</a></li>					
+			</ul>
+		</div>
 	</div>
 
 	<script src="dist/script/main.js"></script>

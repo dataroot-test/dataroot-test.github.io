@@ -90,7 +90,6 @@
 
 .button-log  {
 	padding: 11px 8px 11px 16px;
-	margin-top: -1px;
 
 	&:hover,
     &:active,
@@ -99,7 +98,6 @@
 	    background-color: $color-secondary;
 	    transition: 1s;
 	    outline: none;
-
 	}
 }
 
@@ -134,7 +132,6 @@
 	margin: 0;
     font-weight: 400;
     color: #fff;
-    margin-left: -4px;
     letter-spacing: -0.25px;
     margin-bottom: 9px;
 }
