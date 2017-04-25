@@ -1,17 +1,19 @@
-.container {
-	max-width: 890px;
-	margin: 0 auto;
-}
-
 .header {
 	background: url('../img/header-bg.jpg');
 	width: 100%;
 	padding: 38px 0 37px;
 	background-size: cover;
-}
 
-.hamburger {
-	display: none;
+	.container {
+		@include breakpoint(ex-mobile) {
+			padding-right: 16px;
+			padding-left: 16px;
+		}
+	}
+
+	@include breakpoint(ex-mobile) {
+		padding: 38px 0 25px;
+	}
 }
 
 .logo, 
@@ -22,8 +24,18 @@
 	@include flexbox();
 }
 
+.header__nav {
+	@include breakpoint(tablet) {
+		display: none;
+	}
+}
+
 .header__top {
 	margin-bottom: 63px;
+
+	@include breakpoint(ex-mobile) {
+		margin-bottom: 52px;
+	}
 }
 
 .header__nav-link {
@@ -44,6 +56,10 @@
     	transition: 1s;
     	outline: none;
     	outline: none;
+	}
+
+	@include breakpoint(tablet) {
+		margin-right: 22px;
 	}
 }
 
@@ -86,6 +102,11 @@
 	    transition: 1s;
 	    outline: none;
 	}
+
+	@include breakpoint(tablet) {
+		padding: 11px 25px 11px 13px;
+	}
+
 }
 
 .button-log  {
@@ -104,6 +125,10 @@
 .header__right {
 	@include flexbox();
     margin-left: auto;
+
+	@include breakpoint(tablet) {
+		display: none;
+	}
 }
 
 .fa-plus-circle {
@@ -115,16 +140,49 @@
     font-size: 30px;
     color: $color-secondary;
     font-weight: 400;
+
+	@include breakpoint(ex-mobile) {
+		font-size: 24px;
+		line-height: 38.92px;
+		letter-spacing: -0.75px;
+		width: 250px;
+    }
 }
 
 .header__bottom {
 	display: inline-flex;
 	margin-top: 20px;
+
+	@include breakpoint(tablet) {
+		display: block;
+		text-align: left;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 35px;
+		text-align: left;
+	}
 }
 
 .search-form {
 	display: inline-flex;
 	align-items: flex-end;
+
+	@include breakpoint(tablet) {
+		display: block;
+		text-align: left;
+	}
+
+	@include breakpoint(ex-mobile) {
+		text-align: left;
+	}
+}
+
+.search__form-select {
+	@include breakpoint(tablet) {
+		display: inline-block;
+		text-align: left;
+	}
 }
 
 .search__form-select p,
@@ -134,10 +192,24 @@
     color: #fff;
     letter-spacing: -0.25px;
     margin-bottom: 9px;
+
+   	@include breakpoint(ex-mobile) {
+		margin-left: 0;
+	}
 }
 
 .search__form-select__room {
 	margin-left: 38px;
+
+	@include breakpoint(tablet) {
+		display: inline-block;
+		text-align: left;
+		margin-left: 0;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 30px;
+	}
 }
 
 .search__form-select__room p {
@@ -190,6 +262,23 @@ input[type=checkbox]:checked + label {
 .search__form-button {
  	margin-bottom: 2px;
     margin-left: 48px;
+
+    @include breakpoint(tablet) {
+		text-align: right;
+		margin-right: 55px;
+		margin-left: 0;
+		margin-top: 15px;
+		display: inline-block;
+	}
+
+	@include breakpoint(mobile) {
+		text-align: center;
+	}
+
+	@include breakpoint(ex-mobile) {
+		text-align: left;
+		margin-top: 31px;
+	}
 }
 
 .search-form a {
@@ -208,4 +297,21 @@ input[type=checkbox]:checked + label {
     	transition: 1s;
     	outline: none;
     }
+
+    @include breakpoint(tablet) {
+		margin-left: 0;
+	}
+
+	@include breakpoint(ex-mobile) {
+		display: inline-block;
+	}
 }
+
+.jq-selectbox,
+.select__location .jq-selectbox {
+	@include breakpoint(ex-mobile) {
+		min-width: 300px;
+		margin-left: 0;
+	}
+}
+

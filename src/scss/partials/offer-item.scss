@@ -5,6 +5,70 @@
 .offer__item-content {
 	margin-bottom: 12px;
 	padding-top: 1px;
+	background: $color-secondary;
+
+	@include breakpoint(tablet) {
+    	margin: auto;
+    	margin-bottom: 12px;
+		padding-top: 1px;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin: 0 auto;
+		padding: 1px 20px 12px 19px;
+    	margin-bottom: 12px;
+	}
+
+	.offer__item-main {
+		@include flexbox();
+		margin: 10px 20px 0 20px;
+		flex-flow: row wrap;
+
+		@include breakpoint(ex-mobile) {
+			margin: 12px auto 0;
+    		max-width: 320px;
+		}
+		
+		.rooms-img {
+			width: 242px;
+		}
+
+		.offer__item-group {
+			width: 320px;
+   			margin: 5px 0 0 23px;
+			@include breakpoint(tablet) {
+				width: 49%;
+				text-align: left;
+			}
+
+			@include breakpoint(ex-mobile) {
+				width: 100%;
+				margin-top: 27px;
+				margin-left: 0;
+			}
+		}
+
+		.offer__item-price {
+			width: 148px;
+			text-align: right;
+			margin-left: auto;
+
+			@include breakpoint(tablet) {
+				width: 100%;
+				margin-top: 15px;
+			}
+
+			@include breakpoint(ex-mobile) {
+				margin: 17px 0 0 0;
+
+				& .offer__item-cost {
+					margin-bottom: 15px;
+				    height: 26px;
+					align-items: baseline;
+				}
+			}
+		}
+	}
 }
 
 .offer__item-title {
@@ -23,38 +87,26 @@
 	}
 }
 
-.offer__item-content {
-	background: $color-secondary;
-
-	.offer__item-main {
-		@include flexbox();
-		margin: 10px 20px 0 20px;
-		flex-flow: row wrap;
-		
-		.rooms-img {
-			width: 242px;
-		}
-
-		.offer__item-group {
-			width: 320px;
-   			margin: 5px 0 0 23px;
-		}
-
-		.offer__item-price {
-			width: 148px;
-			text-align: right;
-			margin-left: auto;
-		}
-	}
-}
-
-.offer__item-content .offer__item-main .offer__item-img {
+.offer__item-main .offer__item-img {
 	max-width: 242px;
 	display: flex;
     align-items: center;
 
+    @include breakpoint(tablet) {
+		width: 45%;
+	    margin-top: 2%;
+	}
+
+	@include breakpoint(ex-mobile) {
+		width: 100%;
+		max-width: 326px;
+	}
+
 	& img {
 		width: 100%;
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
 	}
 }
 
@@ -71,10 +123,9 @@
 
     & h4 {
     	letter-spacing: -0.65px;
-	    margin-bottom: 10px;
+	    margin-bottom: 12px;
 	    font-weight: 400;
     }
-    
 }
 
 .offer__item-location {
@@ -100,6 +151,10 @@
 	letter-spacing: -0.5px;
 	margin-bottom: 19px;
 
+	@include breakpoint(ex-mobile) {
+		margin-bottom: 17px;
+	}
+
 	&__point {
 		margin: 0 7px;
 	}
@@ -118,24 +173,45 @@
 	color: #4A4A4A;
 	letter-spacing: -0.25px;
     margin: 0px;
+
+    @include breakpoint(ex-mobile) {
+		width: 54%;
+		text-align: left;
+    }
 }
 
 .offer__item-rate {
-	margin-top: 10px;
+	margin-top: 5px;
+
+	@include breakpoint(tablet) {
+		color: #979797;
+	    margin-left: auto;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin-top: 0;
+	}
 
 	& span {
 		margin-right: 7px;
     	margin-left: 11px;
     	border-bottom: 2px solid #D8D8D8;
     	padding-bottom: 2px;
+
+    	@include breakpoint(tablet) {
+			display: none;
+		}
 	}
 }
 
 .offer__item-cost {
 	margin-top: 4px;
     margin-right: 5px;
-}
 
+    @include breakpoint(tablet) {
+		display: flex;
+	}
+}
 
 .offer__price-rating {
     width: 148px;
@@ -148,6 +224,15 @@
     letter-spacing: -0.25px;
     margin: 24px 12px 20px -1px;
     font-size: 13px;
+
+    @include breakpoint(tablet) {
+		margin: 0 12px 0 -1px;
+	}
+
+	@include breakpoint(ex-mobile) {
+		margin: 0 22px 0 0;
+		display: inline-block;
+	}
 
     & p {
 		margin: 0;
@@ -164,7 +249,6 @@
 	color: #30AD64;
 	font-size: 12px;
 }
-
 
 .offer__contact {
 	text-decoration: none;
@@ -190,6 +274,11 @@
 		transition: 1s;
 		outline: none;
 		filter: invert(-100%);
+	}
+
+	@include breakpoint(tablet) {
+		margin-left: auto;
+		margin-right: 5px;
 	}
 }
 
@@ -218,6 +307,10 @@
 	text-align: center;
 	margin-top: 8px;
 	height: 41px;
+
+	@include breakpoint(tablet) {
+		margin-top: 34px;
+	}	
 }
 
 .slider__radio {
@@ -252,6 +345,10 @@
     text-align: left;
     background: url(../img/icon-right.png) no-repeat 81% 24%;
     width: 136px;
+
+    @include breakpoint(ex-mobile) {	
+		right: -22px;
+    }
     
     & p {
     	font-size: 12px;
@@ -259,4 +356,18 @@
 	    color: #979797;
 	    margin: 0;
     }
+}
+
+.listing-hamburger {
+	@include breakpoint(tablet) {
+		top: 4px;
+	}
+}
+
+.offer__item-contacts {
+	@include breakpoint(tablet) {
+		text-align: left;
+		@include flexbox();
+
+	}
 }
